@@ -1,0 +1,1045 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (Taiwan) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHT)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_TRADITIONAL
+#pragma code_page(950)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINWND MENU 
+BEGIN
+    POPUP "檔案(&F)"
+    BEGIN
+        MENUITEM "新增(&N)\tCtrl+N",              IDM_FILE_NEW
+        MENUITEM "開啟(&O)...\tCtrl+O",           IDM_FILE_OPEN
+        MENUITEM "恢復檔案(&V)\tF5",                IDM_FILE_REVERT
+        MENUITEM "儲存(&S)\tCtrl+S",              IDM_FILE_SAVE
+        MENUITEM "另存新檔(&A)...\tF6",              IDM_FILE_SAVEAS
+        MENUITEM "另存新檔副本(&C)...\tCtrl+F6",       IDM_FILE_SAVECOPY
+        MENUITEM "唯讀模式(&R)",                    IDM_FILE_READONLY
+        MENUITEM SEPARATOR
+        POPUP "執行"
+        BEGIN
+            MENUITEM "新視窗(&N)\tAlt+N",              IDM_FILE_NEWWINDOW
+            MENUITEM "空白視窗(&E)\tAlt+0",             IDM_FILE_NEWWINDOW2
+            MENUITEM SEPARATOR
+            MENUITEM "執行文檔(&D)\tCtrl+L",            IDM_FILE_LAUNCH
+            MENUITEM "開啟為(&O)...\tAlt+L",           IDM_FILE_OPENWITH
+            MENUITEM "執行(&C)...\tCtrl+R",           IDM_FILE_RUN
+        END
+        POPUP "用外部程式開啟(&W)"
+        BEGIN
+            MENUITEM "組態外部程式(&W)...",               IDM_OPENWITH_CONFIG
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "字碼頁轉換",                       IDM_CODEPAGE
+        POPUP "編碼設定"
+        BEGIN
+            MENUITEM "&ANSI",                       IDM_ENCODING_ANSI
+            MENUITEM "&Unicode",                    IDM_ENCODING_UNICODE_LE
+            MENUITEM "Unicode &Big Endian",         IDM_ENCODING_UNICODE_BE
+            MENUITEM "UTF-&8",                      IDM_ENCODING_UTF8
+        END
+        POPUP "重新載入"
+        BEGIN
+            MENUITEM "自動偵測",                        IDM_RELOAD_AUTO
+            MENUITEM SEPARATOR
+            MENUITEM "以 ANSI 載入",                   IDM_RELOAD_ANSI
+            MENUITEM "以 Unicode 載入",                IDM_RELOAD_UNICODE_LE
+            MENUITEM "以 Unicode Big endian 載入",     IDM_RELOAD_UNICODE_BE
+            MENUITEM "以 UTF-8 載入",                  IDM_RELOAD_UTF8
+        END
+        POPUP "行末符號"
+        BEGIN
+            MENUITEM "&Windows (回車+換行)",            IDM_LINEENDINGS_CRLF
+            MENUITEM "&Unix (換行)",                  IDM_LINEENDINGS_LF
+            MENUITEM "&Mac (回車)",                   IDM_LINEENDINGS_CR
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "文檔內容(&I)...",                 IDM_FILE_PROPERTIES
+        MENUITEM "建立文檔桌面捷徑(&D)",              IDM_FILE_CREATELINK
+        MENUITEM SEPARATOR
+        POPUP "我的最愛"
+        BEGIN
+            MENUITEM "開啟我的最愛(&O)...\tAlt+I",         IDM_FILE_OPENFAV
+            MENUITEM "新增當前檔案(&A)...\tAlt+K",        IDM_FILE_ADDTOFAV
+            MENUITEM "管理(&M)...\tF9",               IDM_FILE_MANAGEFAV
+        END
+        MENUITEM "最近開啟的檔案",                     IDM_RECENT_FILE
+        MENUITEM SEPARATOR
+        MENUITEM "結束(&X)\tAlt+F4",              IDM_FILE_EXIT
+    END
+    POPUP "編輯(&E)"
+    BEGIN
+        MENUITEM "撤銷(&U)\tCtrl+Z",              IDM_EDIT_UNDO
+        MENUITEM "重複(&R)\tCtrl+Y",              IDM_EDIT_REDO
+        MENUITEM SEPARATOR
+        MENUITEM "剪下(&T)\tCtrl+X",              IDM_EDIT_CUT
+        MENUITEM "複製(&C)\tCtrl+C",              IDM_EDIT_COPY
+        MENUITEM "全部複製(&A)\tAlt+C",             IDM_EDIT_COPYALL
+        MENUITEM "貼上(&P)\tCtrl+V",              IDM_EDIT_PASTE
+        MENUITEM "移除\tDel",                     IDM_EDIT_CLEAR
+        MENUITEM "全部移除(&L)",                    IDM_EDIT_CLEARALL
+        MENUITEM SEPARATOR
+        MENUITEM "全部選擇(&S)\tCtrl+A",            IDM_EDIT_SELECTALL
+        MENUITEM "選擇文字(&W)\tAlt+空格",            IDM_EDIT_SELECTWORD
+        MENUITEM SEPARATOR
+        POPUP "行"
+        BEGIN
+            MENUITEM "上移(&U)\tCtrl+Shift+↑",        IDM_EDIT_MOVELINEUP
+            MENUITEM "下移(&M)\tCtrl+Shift+↓",        IDM_EDIT_MOVELINEDOWN
+            MENUITEM "上下行互換(&T)\tCtrl+T",           IDM_EDIT_TOGGLELINE
+            MENUITEM "重複本行(&D)",                    IDM_EDIT_DUPLICATELINE
+            MENUITEM "剪下(&C)\tCtrl+Shift+X",        IDM_EDIT_CUTLINE
+            MENUITEM "複製(&O)\tCtrl+Shift+C",        IDM_EDIT_COPYLINE
+            MENUITEM "移除(&E)",                      IDM_EDIT_DELETELINE
+            MENUITEM "移除行左文字(&L)\tCtrl+Shift+←",    IDM_EDIT_DELETELINELEFT
+            MENUITEM "移除行右文字(&R)\tCtrl+Shift+Del",  IDM_EDIT_DELETELINERIGHT
+        END
+        POPUP "文字塊"
+        BEGIN
+            MENUITEM "縮進(&I)\tTab",                 IDM_EDIT_INDENT
+            MENUITEM "取消縮進(&U)\tShift+Tab",         IDM_EDIT_UNINDENT
+            MENUITEM SEPARATOR
+            MENUITEM "移除首字元(&F)\tAlt+Z",            IDM_EDIT_STRIP1STCHAR
+            MENUITEM "移除行尾空格(&T)\tAlt+W",           IDM_EDIT_TRIMLINES
+            MENUITEM "移除空白行(&R)\tAlt+R",            IDM_EDIT_REMOVEBLANKLINES
+            MENUITEM SEPARATOR
+            MENUITEM "分割行(&S)\tCtrl+I",             IDM_EDIT_SPLITLINES
+            MENUITEM "連線行(&J)\tCtrl+Shift+I",       IDM_EDIT_JOINLINES
+        END
+        POPUP "括號比對"
+        BEGIN
+            MENUITEM "尋找比對的括號(&F)\tCtrl+B",         IDM_EDIT_FINDMATCHINGBRACE
+            MENUITEM "選擇括號內文字(&S)\tCtrl+Shift+B",   IDM_EDIT_SELTOMATCHINGBRACE
+        END
+        POPUP "轉換"
+        BEGIN
+            MENUITEM "轉換為大寫字母(&U)\tCtrl+Shift+U",   IDM_EDIT_CONVERTUPPERCASE
+            MENUITEM "轉換為小寫字母(&L)\tCtrl+U",         IDM_EDIT_CONVERTLOWERCASE
+            MENUITEM SEPARATOR
+            MENUITEM "轉換定位字元為空格(&S)\tCtrl+Shift+S",  IDM_EDIT_CONVERTSPACES
+            MENUITEM "轉換空格為定位字元(&T)\tCtrl+Shift+T",  IDM_EDIT_CONVERTTABS
+            MENUITEM SEPARATOR
+            MENUITEM "轉換為 ANSI 文字(&A)\tCtrl+Shift+A", IDM_EDIT_CONVERTANSI
+            MENUITEM "轉換為 OEM 文字(&O)\tCtrl+Shift+O", IDM_EDIT_CONVERTOEM
+        END
+        POPUP "插入"
+        BEGIN
+            MENUITEM "時間、日期 短格式(&S)\tCtrl+F5",      IDM_EDIT_INSERT_SHORTDATE
+            MENUITEM "時間、日期 長格式(&L)\tCtrl+Shift+F5", IDM_EDIT_INSERT_LONGDATE
+            MENUITEM SEPARATOR
+            MENUITEM "檔名(&F)\tCtrl+F9",            IDM_EDIT_INSERT_FILENAME
+            MENUITEM "路徑和檔名(&P)\tCtrl+Shift+F9",   IDM_EDIT_INSERT_PATHNAME
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "尋找(&F)...\tCtrl+F",           IDM_EDIT_FIND
+        MENUITEM "尋找下一個(&X)\tF3",               IDM_EDIT_FINDNEXT
+        MENUITEM "尋找上一個(&V)\tShift+F3",         IDM_EDIT_FINDPREV
+        MENUITEM "取代(&E)...\tCtrl+H",           IDM_EDIT_REPLACE
+        MENUITEM "收集",                          IDM_EDIT_COLLECT
+        MENUITEM "轉到行(&G)...\tCtrl+G",          IDM_EDIT_GOTOLINE
+        POPUP "書籤"
+        BEGIN
+            MENUITEM "到下一個書籤(&N)\tF2",              IDM_EDIT_BOOKMARK_NEXT
+            MENUITEM "到上一個書籤(&P)\tShift+F2",        IDM_EDIT_BOOKMARK_PREV
+            MENUITEM "新增、取消書籤(&T)\tCtrl+F2",        IDM_EDIT_BOOKMARK_TOGGLE
+            MENUITEM "清除所有書籤(&C)\tCtrl+Shift+F2",   IDM_EDIT_BOOKMARK_CLEARALL
+        END
+        MENUITEM "複製為 &HTML 程式碼",                IDM_COPYTO_HTML
+        MENUITEM "複製為 U&BB 程式碼",                 IDM_EXPORT_UBB
+    END
+    POPUP "視圖(&V)"
+    BEGIN
+        MENUITEM "自動換行(&R)\tCtrl+W",            IDM_VIEW_WORDWRAP
+        MENUITEM "顯示排版線(&L)\tCtrl+Shift+L",     IDM_VIEW_LONGLINEMARKER
+        MENUITEM SEPARATOR
+        MENUITEM "顯示鋸齒線(&G)\tCtrl+Shift+G",     IDM_VIEW_SHOWINDENTGUIDES
+        MENUITEM "自動縮排文字(&A)",                  IDM_VIEW_AUTOINDENTTEXT
+        MENUITEM SEPARATOR
+        MENUITEM "顯示行號(&N)\tCtrl+Shift+N",      IDM_VIEW_LINENUMBERS
+        MENUITEM "顯示頁邊空白(&M)\tCtrl+Shift+M",    IDM_VIEW_MARGIN
+        MENUITEM SEPARATOR
+        MENUITEM "顯示空格(&W)\tCtrl+Shift+8",      IDM_VIEW_SHOWWHITESPACE
+        MENUITEM "顯示行末符號(&E)\tCtrl+Shift+9",    IDM_VIEW_SHOWEOLS
+        MENUITEM "顯示換行符號(&Y)\tCtrl+Shift+0",    IDM_VIEW_WORDWRAPSYMBOLS
+        MENUITEM SEPARATOR
+        MENUITEM "顯示括號比對(&B)\tCtrl+Shift+V",    IDM_VIEW_MATCHBRACES
+        MENUITEM "自動封閉HTML/XML標籤(&H)\tCtrl+Shift+H", IDM_VIEW_AUTOCLOSETAGS
+        MENUITEM SEPARATOR
+        MENUITEM "放大頁面(&I)\tCtrl++",            IDM_VIEW_ZOOMIN
+        MENUITEM "縮小頁面(&O)\tCtrl+-",            IDM_VIEW_ZOOMOUT
+        MENUITEM "重設頁面大小(&Z)\tCtrl+/",          IDM_VIEW_RESETZOOM
+        MENUITEM SEPARATOR
+        MENUITEM "顯示工具列(&T)",                   IDM_VIEW_TOOLBAR
+        MENUITEM "顯示狀態列(&S)",                   IDM_VIEW_STATUSBAR
+    END
+    POPUP "工具(&T)"
+    BEGIN
+        MENUITEM "選擇語法高亮方案",                    IDM_VIEW_SCHEME
+        MENUITEM "字數統計(&H)",                    IDM_HELP_CHARCOUNT
+        MENUITEM SEPARATOR
+        POPUP "批次 (BAT/CMD)"
+        BEGIN
+            MENUITEM "註釋程式碼塊(&C)",                   IDM_BAT_COMMENT
+            MENUITEM "解除程式碼塊註釋(&U)",                 IDM_BAT_UNCOMMENT
+        END
+        POPUP "NSIS"
+        BEGIN
+            MENUITEM "編譯 NSIS 指令檔(&P)...",           IDM_NSIS_COMPILE
+            MENUITEM SEPARATOR
+            MENUITEM "註釋程式碼塊 (;) (&C)",              IDM_NSIS_COMMENT
+            MENUITEM "註釋程式碼塊 (#) (&E)",              IDM_NSIS_COMMENT2
+            MENUITEM "解除程式碼塊註釋(&U)",                 IDM_NSIS_UNCOMMENT
+        END
+        POPUP "C/C++"
+        BEGIN
+            MENUITEM "快速格式化(&Q)\tAlt+F8",           IDM_CPP_QFORMAT
+            MENUITEM "自訂格式化(&F)...",               IDM_CPP_FORMAT
+            MENUITEM "格式化方案",                       IDM_FORMAT_SCHEME
+            MENUITEM "批量格式化(&B)...",                IDM_CPP_BATCH_FORMAT
+            MENUITEM SEPARATOR
+            MENUITEM "註釋程式碼塊(&C)",                   IDM_CPP_COMMENT
+            MENUITEM "解除程式碼塊註釋(&U)",                 IDM_CPP_UNCOMMENT
+        END
+        POPUP "Python"
+        BEGIN
+            MENUITEM "註釋程式碼塊(&C)",                   IDM_PY_COMMENT
+            MENUITEM "解除程式碼塊註釋(&U)",                 IDM_PY_UNCOMMENT
+        END
+        POPUP "Ruby"
+        BEGIN
+            MENUITEM "註釋程式碼塊(&C)",                   IDM_RB_COMMENT
+            MENUITEM "解除程式碼塊註釋(&U)",                 IDM_RB_UNCOMMENT
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "自訂工具列(&C)...",               IDM_VIEW_CUSTOMIZETB
+        MENUITEM "自訂語法高亮方案(&M)...",            IDM_VIEW_SCHEMECONFIG
+        MENUITEM "檔案關聯(&F)...",                 IDM_SETTING_FILEASSOCIATION
+        MENUITEM SEPARATOR
+        MENUITEM "設定(&S)...",                   IDM_TOOLS_SETTINGS
+    END
+    POPUP "說明(&H)"
+    BEGIN
+        MENUITEM "關於(&A)...\tF1",               IDM_HELP_ABOUT
+        MENUITEM "指令行說明(&C)",                   IDM_HELP_CMD
+    END
+END
+
+IDR_POPUPMENU MENU 
+BEGIN
+    POPUP "+"
+    BEGIN
+        MENUITEM "撤銷(&U)",                      IDM_EDIT_UNDO
+        MENUITEM "重複(&R)",                      IDM_EDIT_REDO
+        MENUITEM SEPARATOR
+        MENUITEM "剪下(&T)",                      IDM_EDIT_CUT
+        MENUITEM "複製(&C)",                      IDM_EDIT_COPY
+        MENUITEM "全部複製(&A)",                    IDM_EDIT_COPYALL
+        MENUITEM "貼上(&P)",                      IDM_EDIT_PASTE
+        MENUITEM "移除(&E)",                      IDM_EDIT_CLEAR
+        MENUITEM SEPARATOR
+        MENUITEM "全部選擇(&S)",                    IDM_EDIT_SELECTALL
+        MENUITEM "選擇文字(&W)",                    IDM_EDIT_SELECTWORD
+        MENUITEM SEPARATOR
+        MENUITEM "複製為 HTML 程式碼",                 IDM_COPYTO_HTML
+        MENUITEM "複製為 U&BB 程式碼",                 IDM_EXPORT_UBB
+    END
+    POPUP "+"
+    BEGIN
+        MENUITEM "顯示工具列(&T)",                   IDM_VIEW_TOOLBAR
+        MENUITEM "自訂工具列(&C)...",               IDM_VIEW_CUSTOMIZETB
+        MENUITEM "顯示狀態列(&S)",                   IDM_VIEW_STATUSBAR
+    END
+    POPUP "+"
+    BEGIN
+        MENUITEM "開啟",                          IDM_TRAY_RESTORE
+        MENUITEM "結束",                          IDM_TRAY_EXIT
+    END
+    POPUP "+"
+    BEGIN
+        MENUITEM "^\t行首",                       IDM_LINEFRONT
+        MENUITEM "$\t行尾",                       IDM_LINEEND
+        MENUITEM SEPARATOR
+        MENUITEM ".\t任何單個字元",                   IDM_SINGLE_CHAR
+        MENUITEM "*\t零個或更多個",                   IDM_ZERO_OR_MORE
+        MENUITEM "+\t一個或更多個",                   IDM_ONE_OR_MORE
+        MENUITEM "?\t零個或一個",                    IDM_ZERO_OR_ONE
+        MENUITEM "{n,m}\t最少比對 n 次且最多比對 m 次",    IDM_NM
+        MENUITEM SEPARATOR
+        MENUITEM "*?\t非貪婪零個或更多個",               IDM_NG_ZERO_OR_MORE
+        MENUITEM "+?\t非貪婪一個或更多個",               IDM_NG_ONE_OR_MORE
+        MENUITEM "??\t非貪婪零個或一個",                IDM_NG_ZERO_OR_ONE
+        MENUITEM "{n,m}?\t最少比對 n 次且最多比對 m 次",   IDM_NG_NM
+        MENUITEM SEPARATOR
+        MENUITEM "()\t比對一組",                    IDM_GROUP
+        MENUITEM "|\t邏輯或",                      IDM_OR
+        MENUITEM "[]\t字集",                     IDM_CHAR_SET
+        MENUITEM "[^]\t負字集",                   IDM_NCHAR_SET
+        MENUITEM SEPARATOR
+        MENUITEM "\\n\t新行",                     IDM_NEWLINE
+        MENUITEM "\\r\t回車",                     IDM_CR
+        MENUITEM "\\t\t定位字元",                    IDM_TAB
+        MENUITEM "\\w\t單字字元",                     IDM_WORD
+        MENUITEM "\\s\t空格、定位字元、換頁符等",            IDM_SPACE
+        MENUITEM "\\d\t數字",                     IDM_DIGIT
+        MENUITEM "\\l\t小寫",                     IDM_LOWER
+        MENUITEM "\\u\t大寫",                     IDM_UPPER
+        MENUITEM "\\\t轉義字元",                    IDM_ESC
+        MENUITEM SEPARATOR
+        MENUITEM "自訂...",                      IDM_CUSTOM
+    END
+    POPUP "+"
+    BEGIN
+        MENUITEM "\\n\t新行",                     IDM_NEWLINE
+        MENUITEM "\\r\t回車",                     IDM_CR
+        MENUITEM "\\t\t定位字元",                    IDM_TAB
+        MENUITEM SEPARATOR
+       MENUITEM "\\0\t整個子運算式",                  IDM_MATCH_SUBEXP0
+        MENUITEM SEPARATOR
+        MENUITEM "\\1\t比對的子運算式 1",               IDM_MATCH_SUBEXP1
+        MENUITEM "\\2\t比對的子運算式 2",               IDM_MATCH_SUBEXP2
+        MENUITEM "\\3\t比對的子運算式 3",               IDM_MATCH_SUBEXP3
+        MENUITEM "\\4\t比對的子運算式 4",               IDM_MATCH_SUBEXP4
+        MENUITEM "\\5\t比對的子運算式 5",               IDM_MATCH_SUBEXP5
+        MENUITEM "\\6\t比對的子運算式 6",               IDM_MATCH_SUBEXP6
+        MENUITEM "\\7\t比對的子運算式 7",               IDM_MATCH_SUBEXP7
+        MENUITEM "\\8\t比對的子運算式 8",               IDM_MATCH_SUBEXP8
+        MENUITEM "\\9\t比對的子運算式 9",               IDM_MATCH_SUBEXP9
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_RUN DIALOGEX 0, 0, 224, 85
+STYLE DS_SETFONT | DS_3DLOOK | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "執行"
+FONT 9, "MingLiu", 0, 0, 0x1
+BEGIN
+    ICON            IDI_RUN,IDC_STATIC,7,7,20,20
+    LTEXT           "輸入要開啟的程式，資料夾或是文檔的檔名",IDC_STATIC,35,7,188,17
+    EDITTEXT        IDC_COMMANDLINE,35,35,165,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "",IDC_SEARCHEXE,204,35,13,13
+    DEFPUSHBUTTON   "確定",IDOK,112,64,50,14
+    PUSHBUTTON      "取消",IDCANCEL,167,64,50,14
+END
+
+IDD_LINENUM DIALOGEX 0, 0, 186, 46
+STYLE DS_SETFONT | DS_3DLOOK | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "轉到"
+FONT 9, "MingLiu", 0, 0, 0x1
+BEGIN
+    LTEXT           "行:(&L)",IDC_STATIC,7,7,16,8
+    EDITTEXT        IDC_LINENUM,7,24,46,14,ES_AUTOHSCROLL
+    LTEXT           "列:(&C)",IDC_STATIC,63,7,27,8
+    EDITTEXT        IDC_COLNUM,63,24,46,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "確定",IDOK,129,7,50,14
+    PUSHBUTTON      "取消",IDCANCEL,129,24,50,14
+END
+
+IDD_STYLECONFIG DIALOGEX 0, 0, 408, 270
+STYLE DS_SETFONT | DS_3DLOOK | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "自訂語法高亮方案"
+FONT 9, "MingLiu", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_STYLELIST,"SysTreeView32",TVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP | 0x400,7,7,164,256
+    EDITTEXT        IDC_STYLEEDIT,185,53,206,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "",IDC_PREVSTYLE,179,229,16,14
+    PUSHBUTTON      "",IDC_NEXTSTYLE,179,249,16,14
+    PUSHBUTTON      "字型(&F)...",IDC_STYLEFONT,301,85,54,14
+    PUSHBUTTON      "前景色(&E)...",IDC_STYLEFORE,301,138,54,14
+    PUSHBUTTON      "背景色(&B)...",IDC_STYLEBACK,301,162,54,14
+    DEFPUSHBUTTON   "確定",IDOK,289,249,50,14
+    PUSHBUTTON      "取消",IDCANCEL,351,249,50,14
+    ICON            IDI_STYLES,IDC_STATIC,181,7,21,21
+    CTEXT           "",IDC_FCOLOR,264,138,23,15,SS_CENTERIMAGE,WS_EX_STATICEDGE
+    CTEXT           "",IDC_BCOLOR,264,162,23,15,SS_CENTERIMAGE,WS_EX_STATICEDGE
+    LTEXT           "副檔名:",IDC_STATIC,185,42,148,8
+    EDITTEXT        IDC_FONT_SIZE,202,86,85,12,ES_AUTOHSCROLL | ES_READONLY | ES_NUMBER
+    CONTROL         "粗體",IDC_FONT_BOLD,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,202,109,32,10
+    CONTROL         "斜體",IDC_FONT_ITALIC,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,262,109,32,10
+    CONTROL         "底線",IDC_FONT_UNDERLINE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,322,109,40,10
+    LTEXT           "每種樣式都可以單獨設定字型和色彩，如果沒有設定則使用預設樣式的設定。",IDC_STATIC,202,207,190,28
+    EDITTEXT        IDC_FGCODE,202,138,40,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_BGCODE,202,162,40,14,ES_AUTOHSCROLL | ES_READONLY
+END
+
+IDD_STYLESELECT DIALOGEX 0, 0, 226, 256
+STYLE DS_SETFONT | DS_3DLOOK | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "選擇語法高亮方案"
+FONT 9, "MingLiu", 0, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_STYLELIST,"SysListView32",LVS_SMALLICON | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_SHAREIMAGELISTS | LVS_AUTOARRANGE | WS_BORDER | WS_TABSTOP,10,10,204,202
+    DEFPUSHBUTTON   "確定",IDOK,105,231,50,14,WS_DISABLED
+    PUSHBUTTON      "取消",IDCANCEL,164,231,50,14
+    SCROLLBAR       IDC_SIZEBOX,214,245,12,11,SBS_SIZEBOXBOTTOMRIGHTALIGN | SBS_SIZEBOX | SBS_SIZEGRIP
+END
+
+IDD_REPLACE DIALOGEX 0, 0, 310, 150
+STYLE DS_SETFONT | DS_3DLOOK | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "尋找和取代"
+FONT 9, "MingLiu", 0, 0, 0x0
+BEGIN
+    ICON            IDI_FIND,IDC_STATIC,7,7,20,20
+    LTEXT           "尋找字串:",IDC_STATIC,35,25,46,8
+    COMBOBOX        IDC_FINDTEXT,35,34,192,116,CBS_DROPDOWN | CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "取代為:",IDC_STATIC_REPLACETEXT,35,58,44,8
+    COMBOBOX        IDC_REPLACETEXT,35,68,192,116,CBS_DROPDOWN | CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "大小寫視為相異(&C)",IDC_FINDCASE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,35,92,91,10
+    CONTROL         "全字拼寫須符合(&W)",IDC_FINDWORD,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,35,105,84,10
+    CONTROL         "只尋找首字元(&B)",IDC_FINDSTART,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,35,118,95,10
+    CONTROL         "規則運算式(&E)",IDC_FINDREGEXP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,35,131,93,10
+    CONTROL         "向上尋找(&U)",IDC_FINDUP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,160,92,74,10
+    CONTROL         "完成後關閉(&L)",IDC_FINDCLOSE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,160,105,77,10
+    DEFPUSHBUTTON   "尋找(&F)",IDOK,250,23,53,14
+    PUSHBUTTON      "取代(&R)",IDC_REPLACE,250,40,53,14
+    PUSHBUTTON      "收集(&T)",IDC_COLLECT,250,40,53,14
+    PUSHBUTTON      "全部取代(&A)",IDC_REPLACEALL,250,57,53,14
+    PUSHBUTTON      "僅選擇的(&S)",IDC_REPLACEINSEL,250,75,53,14
+    PUSHBUTTON      "關閉",IDCANCEL,250,92,53,14
+    CTEXT           "尋找",IDC_DO_FIND,35,7,29,8,SS_NOTIFY
+    CTEXT           "取代",IDC_DO_REPLACE,74,7,29,8,SS_NOTIFY
+    LTEXT           "|",IDC_STATIC,67,7,8,8
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,35,19,268,1
+    CTEXT           "收集",IDC_DO_COLLECT,113,7,29,8,SS_NOTIFY
+    LTEXT           "|",IDC_STATIC,106,7,8,8
+    CONTROL         "",IDC_YPOS,"Static",SS_ETCHEDHORZ,35,92,268,1
+    PUSHBUTTON      ">",IDC_MENU_FIND,228,34,13,13
+    PUSHBUTTON      ">",IDC_MENU_REPLACE,228,68,13,13
+END
+
+IDD_PAGESETUP DIALOGEX 5, 5, 356, 218
+STYLE DS_SETFONT | DS_3DLOOK | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "頁面設定"
+FONT 9, "MingLiu", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "紙張",1073,8,8,224,56,WS_GROUP
+    LTEXT           "大小(&Z):",1089,16,24,36,8
+    COMBOBOX        1137,64,23,160,160,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    LTEXT           "輸入源(&S):",1090,16,45,36,8
+    COMBOBOX        1138,64,42,160,160,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    GROUPBOX        "方向",1072,8,69,64,56,WS_GROUP
+    CONTROL         "縱向(&O)",1056,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,16,82,52,12
+    CONTROL         "橫向(&A)",1057,"Button",BS_AUTORADIOBUTTON,16,103,52,12
+    GROUPBOX        "版邊",1075,80,69,152,56,WS_GROUP
+    LTEXT           "左(&L):",1102,88,85,32,8
+    EDITTEXT        1155,120,82,28,12,WS_GROUP
+    LTEXT           "上(&T):",1104,88,104,32,8
+    EDITTEXT        1156,120,103,28,12,WS_GROUP
+    LTEXT           "右(&R):",1103,164,85,32,8
+    EDITTEXT        1157,196,82,28,12,WS_GROUP
+    LTEXT           "下(&B):",1105,164,104,32,8
+    EDITTEXT        1158,196,103,28,12,WS_GROUP
+    GROUPBOX        "頁眉和頁腳",1074,8,130,224,56,WS_GROUP
+    LTEXT           "頁眉(&H):",IDC_STATIC,16,146,36,8
+    COMBOBOX        32,64,145,160,160,CBS_DROPDOWNLIST | WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    LTEXT           "頁腳(&F):",IDC_STATIC,16,167,36,8
+    COMBOBOX        33,64,164,160,160,CBS_DROPDOWNLIST | WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    GROUPBOX        "縮放",IDC_STATIC,240,130,108,56,WS_GROUP
+    LTEXT           "列印縮放(&Z)(-10 到 +20):",IDC_STATIC,248,146,92,8
+    EDITTEXT        30,298,164,42,12,ES_AUTOHSCROLL
+    CONTROL         "",31,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | UDS_HOTTRACK,282,163,11,14
+    DEFPUSHBUTTON   "確定",1,175,195,50,14,WS_GROUP
+    PUSHBUTTON      "取消",2,229,195,50,14
+    PUSHBUTTON      "印表機(&P)...",1026,287,195,61,14
+    GROUPBOX        "預覽",IDC_STATIC,240,8,108,117
+    CONTROL         "",1080,"Static",SS_WHITERECT,254,26,80,80
+    CONTROL         "",1081,"Static",SS_GRAYRECT,334,30,4,80
+    CONTROL         "",1082,"Static",SS_GRAYRECT,262,102,80,4
+END
+
+IDD_FAVORITES DIALOGEX 0, 0, 324, 298
+STYLE DS_SETFONT | DS_3DLOOK | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "我的最愛"
+FONT 9, "MingLiu", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_INFO,"SysListView32",LVS_SMALLICON | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_SHAREIMAGELISTS | LVS_AUTOARRANGE | LVS_NOCOLUMNHEADER | WS_BORDER | WS_TABSTOP,8,34,306,206
+    PUSHBUTTON      "設定我的最愛資料夾...",IDC_GOTOFAVDIR,8,276,89,13
+    DEFPUSHBUTTON   "開啟",IDOK,264,253,50,14
+    PUSHBUTTON      "關閉",IDCANCEL,264,275,50,14
+    SCROLLBAR       IDC_SIZEBOX,314,289,10,9,SBS_SIZEBOXBOTTOMRIGHTALIGN | SBS_SIZEBOX | SBS_SIZEGRIP
+    LTEXT           "當前資料夾:",IDC_STATIC,8,8,77,8
+    EDITTEXT        IDC_CURDIR,8,17,306,14,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "",IDC_UP,107,275,18,14
+    COMBOBOX        IDC_FILTER,8,253,204,100,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_ADDTOFAV DIALOGEX 0, 0, 172, 66
+STYLE DS_SETFONT | DS_3DLOOK | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "新增到我的最愛"
+FONT 9, "MingLiu", 400, 0, 0x1
+BEGIN
+    LTEXT           "給新我的最愛項輸入一個名稱:",IDC_STATIC,7,7,158,8
+    EDITTEXT        100,7,22,158,13,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "確定",IDOK,59,45,50,14,WS_DISABLED
+    PUSHBUTTON      "取消",IDCANCEL,115,45,50,14
+END
+
+IDD_FORMAT DIALOGEX 0, 0, 438, 317
+STYLE DS_SETFONT | DS_3DLOOK | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "格式化方案"
+FONT 9, "MingLiu", 400, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "確定",IDOK,306,296,50,14
+    PUSHBUTTON      "取消",IDCANCEL,381,296,50,14
+    EDITTEXT        IDC_SPACE_NUM,231,123,25,12,ES_RIGHT | ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPACE_NUM_SPIN,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | UDS_NOTHOUSANDS,258,122,10,14
+    LTEXT           "空格數或佔據的空格數",IDC_STATIC,187,121,44,20
+    COMBOBOX        IDC_PREDEFINE,178,20,101,155,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "預定義方案:",IDC_STATIC,178,7,56,8
+    LTEXT           "描述:",IDC_STATIC,7,7,56,8
+    LTEXT           "",IDC_DESCRIPTION,7,20,157,163,SS_NOTIFY | WS_BORDER | WS_TABSTOP
+    GROUPBOX        "語言類型",IDC_STATIC,178,40,101,29
+    CONTROL         "C",IDC_C,"Button",BS_AUTORADIOBUTTON | WS_GROUP,187,52,34,10
+    CONTROL         "Java",IDC_JAVA,"Button",BS_AUTORADIOBUTTON,234,52,34,10
+    GROUPBOX        "縮進符號",IDC_STATIC,177,76,101,72
+    CONTROL         "空格",IDC_SPACE,"Button",BS_AUTORADIOBUTTON | WS_GROUP,187,90,32,10
+    CONTROL         "定位字元 (Tab)",IDC_TAB,"Button",BS_AUTORADIOBUTTON,187,105,64,10
+    CONTROL         "縮進 class",IDC_INDENT_CLASS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,309,31,56,10
+    CONTROL         "縮進 switch",IDC_INDENT_SWITCH,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,309,46,60,10
+    CONTROL         "縮進 case",IDC_INDENT_CASE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,309,61,52,10
+    CONTROL         "縮進 { }",IDC_INDENT_BRACKET,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,309,76,48,10
+    CONTROL         "縮進 { } 區塊",IDC_INDENT_BLOCK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,309,91,68,10
+    CONTROL         "縮進 namespace",IDC_INDENT_NAMESPACE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,309,106,72,10
+    CONTROL         "縮進跳轉標記",IDC_INDENT_LABEL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,309,121,64,10
+    GROUPBOX        "縮進",IDC_STATIC,299,20,112,207
+    LTEXT           "最大宣告縮進",IDC_STATIC,309,190,49,8
+    EDITTEXT        IDC_MAX_INDENT,362,188,25,12,ES_RIGHT | ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "",IDC_MAX_II_SPIN,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | UDS_NOTHOUSANDS,388,187,11,14
+    LTEXT           "最小條件縮進",IDC_STATIC,309,205,49,8
+    EDITTEXT        IDC_MIN_CI,362,202,25,12,ES_RIGHT | ES_AUTOHSCROLL
+    CONTROL         "",IDC_MIN_CI_SPIN,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | UDS_NOTHOUSANDS,388,201,11,14
+    CONTROL         "縮進預處理器",IDC_INDENT_PREPROCESSOR,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,309,136,64,10
+    CONTROL         "轉換定位字元 (Tab)",IDC_CONVERT_TAB,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,309,151,80,10
+    CONTROL         "填充空行",IDC_FILL_EMPTY_LINE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,309,166,48,10
+    GROUPBOX        "區塊風格",IDC_STATIC,177,157,101,79
+    CONTROL         "標準",IDC_BLOCK_STD,"Button",BS_AUTORADIOBUTTON | WS_GROUP,187,171,32,10
+    CONTROL         "附加",IDC_BLOCK_ATTACH,"Button",BS_AUTORADIOBUTTON,187,186,32,10
+    CONTROL         "Linux",IDC_BLOCK_LINUX,"Button",BS_AUTORADIOBUTTON,187,201,36,10
+    CONTROL         "附加和 Linux 混合",IDC_BLOCK_BCH,"Button",BS_AUTORADIOBUTTON,187,216,84,10
+    GROUPBOX        "區塊填充",IDC_STATIC,177,246,101,44
+    CONTROL         "填充區塊頭",IDC_PAD_BLOCK_HEADER,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,187,260,56,10
+    CONTROL         "分離 else if",IDC_SEPER_ELSEIF,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,187,276,64,10
+    GROUPBOX        "運算元填充",IDC_STATIC,7,193,157,44
+    CONTROL         "普通運算元",IDC_PAD_OPERATION,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,27,205,56,10
+    CONTROL         "父運算元",IDC_PAD_PARENT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,27,221,48,10
+    GROUPBOX        "其他",IDC_STATIC,7,246,157,44
+    CONTROL         "多個陳述式在一行",IDC_MIX_STATEMENT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,27,258,72,10
+    CONTROL         "區塊在一行",IDC_MIX_BLOCK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,27,273,56,10
+    PUSHBUTTON      "方案另存新檔...",IDC_SAVEAS,299,265,101,14
+    PUSHBUTTON      "把當前方案設為預設值",IDC_SETDEFAULT,299,239,101,14
+END
+
+IDD_COMPILE_NSIS DIALOGEX 0, 0, 294, 252
+STYLE DS_SETFONT | DS_3DLOOK | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "編譯 NSIS 指令檔"
+FONT 9, "MingLiu", 400, 0, 0x0
+BEGIN
+    PUSHBUTTON      "關閉(&C)",IDCANCEL,231,226,50,14
+    CONTROL         "",IDC_INFO,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_NOCOLUMNHEADER | WS_BORDER | WS_TABSTOP,9,21,272,191
+    PUSHBUTTON      "測試安裝程式(&T)",IDC_TEST,134,226,86,14,WS_DISABLED
+    SCROLLBAR       IDC_SIZEBOX,281,240,13,12,SBS_SIZEBOXBOTTOMRIGHTALIGN | SBS_SIZEBOX | SBS_SIZEGRIP
+END
+
+IDD_CPP_BATCH_FORMAT DIALOGEX 0, 0, 302, 224
+STYLE DS_SETFONT | DS_3DLOOK | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "批量格式化"
+FONT 9, "MingLiu", 400, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "開始",IDOK,171,200,50,14
+    PUSHBUTTON      "取消",IDCANCEL,240,200,50,14
+    LTEXT           "選擇一個格式化方案:",IDC_STATIC,10,14,97,8
+    COMBOBOX        IDC_METHOD,10,27,147,157,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_PATH,10,174,241,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BROWSE,260,174,30,14
+    CONTROL         "",IDC_INFO,"SysListView32",LVS_REPORT | LVS_NOCOLUMNHEADER | WS_BORDER,10,56,280,70
+    LTEXT           "請選擇要處理的檔案:",IDC_STATIC1,10,163,200,8
+    SCROLLBAR       IDC_SIZEBOX,290,214,11,10,SBS_SIZEBOXBOTTOMRIGHTALIGN | SBS_SIZEBOX | SBS_SIZEGRIP
+    CONTROL         "",IDC_PROGRESS,"msctls_progress32",WS_BORDER,10,141,280,14
+END
+
+IDD_SAVE_METHOD DIALOGEX 0, 0, 266, 243
+STYLE DS_SETFONT | DS_3DLOOK | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "儲存格式化方案"
+FONT 9, "MingLiu", 400, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "確定",IDOK,141,217,50,14
+    PUSHBUTTON      "取消",IDCANCEL,202,217,50,14
+    LTEXT           "名稱",IDC_STATIC,8,15,81,8
+    LTEXT           "描述",IDC_STATIC,8,53,92,8
+    EDITTEXT        IDC_NAME,8,27,244,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_INFO,8,66,244,137,ES_MULTILINE | ES_AUTOHSCROLL | ES_WANTRETURN
+    SCROLLBAR       IDC_SIZEBOX,252,231,13,11,SBS_SIZEBOXBOTTOMRIGHTALIGN | SBS_SIZEBOX | SBS_SIZEGRIP
+END
+
+IDD_FILEASSOC DIALOGEX 0, 0, 314, 274
+STYLE DS_SETFONT | DS_3DLOOK | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "檔案關聯"
+FONT 9, "MingLiu", 400, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "確定",IDOK,198,249,50,14
+    PUSHBUTTON      "取消",IDCANCEL,251,249,50,14
+    CONTROL         "",IDC_TREEVIEW,"SysTreeView32",TVS_HASBUTTONS | TVS_HASLINES | TVS_LINESATROOT | TVS_DISABLEDRAGDROP | WS_BORDER | WS_TABSTOP,11,12,290,213
+    PUSHBUTTON      "全選(&A)",IDC_SELALL,11,249,50,14
+    PUSHBUTTON      "全取消(&U)",IDC_SELNONE,69,249,50,14
+    CONTROL         "設為 Internet Explorer 的原始碼察看器",IDC_IE_VIEWER,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,11,232,164,10
+    SCROLLBAR       IDC_SIZEBOX,301,263,13,10,SBS_SIZEBOXBOTTOMRIGHTALIGN | SBS_SIZEBOX | SBS_SIZEGRIP
+END
+
+IDD_OPENWITH DIALOGEX 0, 0, 312, 270
+STYLE DS_SETFONT | DS_3DLOOK | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "組態外部程式"
+FONT 9, "MingLiu", 400, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "確定",IDOK,187,246,50,14
+    PUSHBUTTON      "取消",IDCANCEL,249,246,50,14
+    LTEXT           "名稱:",IDC_STATIC_NAME,8,200,43,8
+    EDITTEXT        IDC_NAME,59,198,120,14,ES_AUTOHSCROLL
+    LTEXT           "執行檔案:",IDC_STATIC_PATH,8,225,44,8
+    EDITTEXT        IDC_PATH,59,223,204,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BROWSE,273,223,26,14
+    CONTROL         "",IDC_INFO,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_NOCOLUMNHEADER | LVS_NOSORTHEADER | WS_BORDER | WS_TABSTOP,8,15,291,170,WS_EX_STATICEDGE
+    PUSHBUTTON      "新增",IDC_ADD,191,198,50,14
+    PUSHBUTTON      "移除",IDC_REMOVE,249,198,50,14
+    SCROLLBAR       IDC_SIZEBOX,299,260,13,10,SBS_SIZEBOXBOTTOMRIGHTALIGN | SBS_SIZEBOX | SBS_SIZEGRIP
+END
+
+IDD_PROP_GENERAL DIALOGEX 0, 0, 223, 125
+STYLE DS_SETFONT | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "常規"
+FONT 9, "MingLiu", 400, 0, 0x0
+BEGIN
+    CONTROL         "只允許一個實例",IDC_REUSEWINDOW,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,8,0,112,10
+    CONTROL         "視窗保持最前端",IDC_ALWAYSONTOP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,8,16,112,10
+    CONTROL         "最小化到系統匣",IDC_MINTOTRAY,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,8,32,112,10
+    CONTROL         "透明模式",IDC_TRANSPARENT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,8,87,88,10
+    CONTROL         "在標題列上顯示檔案位置",IDC_SHOWFULLPATH,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,8,48,111,10
+    CONTROL         "儲存前執行工具",IDC_SAVEVEFORERUNNINGTOOLS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,8,64,114,10
+    GROUPBOX        "Esc 鍵功能",IDC_STATIC,127,0,89,67
+    CONTROL         "最小化",IDC_ESCMINIMIZE,"Button",BS_AUTORADIOBUTTON,136,16,41,10
+    CONTROL         "結束",IDC_ESCEXIT,"Button",BS_AUTORADIOBUTTON,136,32,27,10
+    CONTROL         "無",IDC_NOESNFUNC,"Button",BS_AUTORADIOBUTTON,136,48,33,10
+    CONTROL         "",IDC_SLIDER_ALPHA,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,8,101,118,15
+    LTEXT           "Static",IDC_ALPHA,104,88,19,8
+END
+
+IDD_PROP_EDITOR DIALOGEX 0, 0, 242, 125
+STYLE DS_SETFONT | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "編輯器"
+FONT 9, "MingLiu", 400, 0, 0x0
+BEGIN
+    GROUPBOX        "自動換行",IDC_STATIC,0,0,109,53
+    LTEXT           "首字元縮進:",IDC_STATIC,8,15,52,8
+    EDITTEXT        IDC_INDENT,53,12,31,14,ES_AUTOHSCROLL | ES_NUMBER
+    COMBOBOX        IDC_SYMBOL,8,30,91,80,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "排版線",IDC_STATIC,0,57,109,62
+    LTEXT           "界限:",IDC_STATIC,8,73,28,8
+    EDITTEXT        IDC_LONGLINES,53,69,31,14,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "顯示邊線",IDC_EDGE,"Button",BS_AUTORADIOBUTTON,8,88,67,10
+    CONTROL         "變更背景色",IDC_BACKGROUND,"Button",BS_AUTORADIOBUTTON,8,102,98,10
+    GROUPBOX        "定位字元",IDC_STATIC,117,0,125,53
+    LTEXT           "定位字元寬度:",IDC_STATIC,122,15,36,8
+    EDITTEXT        IDC_TABWIDTH,171,12,31,14,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "插入的定位字元取代為空格。",IDC_TABASSPACE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,122,34,100,10
+END
+
+IDD_CUSTOM_REGXP DIALOGEX 0, 0, 364, 308
+STYLE DS_SETFONT | DS_3DLOOK | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "自訂規則運算式"
+FONT 9, "MingLiu", 400, 0, 0x0
+BEGIN
+    PUSHBUTTON      "關閉",IDCANCEL,304,285,50,14
+    CONTROL         "",IDC_LIST,"SysListView32",LVS_REPORT | LVS_SINGLESEL | WS_BORDER | WS_TABSTOP,7,7,347,174
+    SCROLLBAR       IDC_SIZEBOX,354,299,10,9,SBS_SIZEBOXBOTTOMRIGHTALIGN | SBS_SIZEBOX | SBS_SIZEGRIP
+    LTEXT           "名稱:",IDC_STATIC_NAME,7,189,65,8
+    EDITTEXT        IDC_NAME,7,200,347,14,ES_AUTOHSCROLL
+    LTEXT           "運算式:",IDC_STATIC_VALUE,7,223,80,8
+    EDITTEXT        IDC_VALUE,7,234,347,34,ES_AUTOHSCROLL
+    PUSHBUTTON      "移除(&R)",IDC_REMOVE,125,285,50,14
+    PUSHBUTTON      "修改(&M)",IDC_MODIFY,65,285,50,14
+    PUSHBUTTON      "新增(&A)",IDC_ADD,7,285,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_LINENUM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 39
+    END
+
+    IDD_STYLECONFIG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 401
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 263
+    END
+
+    IDD_STYLESELECT, DIALOG
+    BEGIN
+        LEFTMARGIN, 10
+        RIGHTMARGIN, 214
+        TOPMARGIN, 10
+        BOTTOMMARGIN, 245
+    END
+
+    IDD_REPLACE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 303
+        VERTGUIDE, 35
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 143
+    END
+
+    IDD_PAGESETUP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 349
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 211
+    END
+
+    IDD_FAVORITES, DIALOG
+    BEGIN
+        LEFTMARGIN, 8
+        RIGHTMARGIN, 314
+        TOPMARGIN, 8
+        BOTTOMMARGIN, 289
+    END
+
+    IDD_ADDTOFAV, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 165
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 59
+    END
+
+    IDD_FORMAT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 431
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 310
+    END
+
+    IDD_COMPILE_NSIS, DIALOG
+    BEGIN
+        LEFTMARGIN, 9
+        RIGHTMARGIN, 281
+        TOPMARGIN, 10
+        BOTTOMMARGIN, 240
+    END
+
+    IDD_CPP_BATCH_FORMAT, DIALOG
+    BEGIN
+        LEFTMARGIN, 10
+        RIGHTMARGIN, 290
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 214
+    END
+
+    IDD_SAVE_METHOD, DIALOG
+    BEGIN
+        LEFTMARGIN, 8
+        RIGHTMARGIN, 252
+        TOPMARGIN, 8
+        BOTTOMMARGIN, 231
+    END
+
+    IDD_FILEASSOC, DIALOG
+    BEGIN
+        LEFTMARGIN, 11
+        RIGHTMARGIN, 301
+        TOPMARGIN, 12
+        BOTTOMMARGIN, 263
+    END
+
+    IDD_OPENWITH, DIALOG
+    BEGIN
+        LEFTMARGIN, 8
+        RIGHTMARGIN, 299
+        TOPMARGIN, 8
+        BOTTOMMARGIN, 260
+    END
+
+    IDD_CUSTOM_REGXP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 354
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 299
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_APPTITLE            "Notepad2"
+    IDS_APPTITLE_PASTEBOARD "剪貼簿"
+    IDS_UNTITLED            "未命名"
+    IDS_READONLY            "(唯讀模式)"
+    IDS_DOCPOS              "行 %s : %s   列 %s   選擇的位元組 %s"
+    IDS_VERSION             "簡體中文版"
+    IDS_LOADFILE            "載入中 ""%s""..."
+    IDS_SAVEFILE            "儲存中 ""%s""..."
+    IDS_PRINTFILE           "列印頁面 %i..."
+    IDS_LINKDESCRIPTION     "用 Notepad2 編輯"
+    IDS_ERR_FINDTOOLONG     "要尋找取代的文字長度限制在 255 字元以內"
+    IDS_ERR_COMPILE_NSIS    "NSIS 編譯器執行錯誤。"
+    IDS_FORMATTED           "格式化完成: "
+    IDS_ERR_OPENFILE        "開啟檔案錯誤: "
+    IDS_CLOSE               "關閉"
+    IDS_FORMATTING          "正在格式化: "
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FILTER_ALL          "全部檔案 (*.*)\n*.*\n"
+    IDS_FILTER_EXE          "可執行檔案 (*.exe;*.com;*.bat;*.lnk;*.pif)\n*.exe;*.com;*.bat;*.lnk;*.pif\n"
+    IDS_OPENWITH            "按這裡瀏覽詳細資料夾，以便開啟你喜歡的應用程式。"
+    IDS_FAVORITES           "選擇我的最愛連結的資料夾。"
+END
+
+STRINGTABLE 
+BEGIN
+    IDT_FILE_NEW            "新增"
+    IDT_FILE_OPEN           "開啟"
+    IDT_VIEW_ALWAYSONTOP    "視窗保持最前端"
+    IDT_FILE_SAVE           "儲存"
+END
+
+STRINGTABLE 
+BEGIN
+    IDT_EDIT_UNDO           "撤銷"
+    IDT_EDIT_REDO           "重做"
+    IDT_EDIT_CUT            "剪下"
+    IDT_EDIT_COPY           "複製"
+    IDT_EDIT_PASTE          "貼上"
+    IDT_EDIT_FIND           "尋找"
+    IDT_EDIT_REPLACE        "取代"
+    IDT_VIEW_WORDWRAP       "自動換行"
+    IDT_VIEW_ZOOMIN         "放大"
+    IDT_VIEW_ZOOMOUT        "縮小"
+    IDT_VIEW_SCHEME         "選擇語法高亮方案"
+    IDT_VIEW_SCHEMECONFIG   "組態語法高亮方案"
+    IDT_FILE_EXIT           "結束"
+    IDT_FILE_SAVEAS         "另存新檔"
+    IDT_FILE_SAVECOPY       "另存新檔副本"
+    IDT_EDIT_CLEAR          "移除"
+END
+
+STRINGTABLE 
+BEGIN
+    IDT_EDIT_COPYALL        "全部複製"
+    IDT_EDIT_FINDNEXT       "尋找下一個"
+    IDT_EDIT_FINDPREV       "尋找上一個"
+    IDT_FILE_PRINT          "列印"
+    IDT_FILE_OPENFAV        "我的最愛"
+    IDT_FILE_ADDTOFAV       "新增到我的最愛"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ERR_LOADFILE        "開啟檔案錯誤 ""%s""！\n請確定檔案沒有被其它的應用程式佔用。"
+    IDS_ERR_SAVEFILE        "儲存檔案錯誤 ""%s""！\n請檢視檔案是否寫保護或是被其它的應用程式佔用。"
+    IDS_ERR_MRUDLG          "選擇的檔案沒有載入！\n你想從清單中移除它嗎？"
+    IDS_ERR_CREATELINK      "建立桌面連結錯誤。"
+    IDS_ERR_PREVWINDISABLED "當前的 Notepad2 無回應或存在一個活動的的對話方塊。\n你想開啟另一個 Notepad2 嗎？"
+    IDS_SELRECT             "在垂直選擇的文字塊中不能執行這次操作。"
+    IDS_FIND_WRAPFW         "已到達文字底部。\n從文字開始處重新尋找。"
+    IDS_FIND_WRAPRE         "已到達文字頂部。\n從文字結尾處重新尋找。"
+    IDS_NOTFOUND            "指定的文字沒有找到。"
+    IDS_REPLCOUNT           "%i 個指定的文字已成功取代。"
+    IDS_WARNLOADBIGFILE     "確定要開啟這個大檔案嗎？"
+    IDS_WORDWRAPVISUALS     "無換行符號\n符號在行首\n符號在行末\n符號在行首和行末\n符號靠近邊方塊"
+    IDS_SAVESETTINGS        "當前程式設定已經儲存。"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CMDLINEHELP         "Notepad2.exe [/g ln[,col]] [/n] [/c] [/p x,y,cx,cy[,max]] [/i] [/u] [/?] [file]\n\n/g:\t跳轉到指定的位置, -1 表示檔案的結尾.\n/n:\t總是開啟新的視窗.\n/c:\t開啟新的視窗並貼上剪貼簿的內容.\n/b:\t開啟新的處理序並收集剪貼簿項.\n/p:\t設定視窗大小和位置\n/i:\t啟動時縮小到系統匣圖示.\n/u:\t移除組態.\n/?:\t顯示指令行說明資訊."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ERR_DROP            "一次只能拖曳一個文字檔到 Notepad2！"
+    IDS_ASK_SAVE            "儲存改變到 ""%s"" 嗎？"
+    IDS_ASK_CREATE          """%s"" 沒有找到。\n你想建立這個檔案嗎？"
+    IDS_PRINT_HEADER        "檔名、當前日期和時間|檔名、當前日期|檔名|空白"
+    IDS_PRINT_FOOTER        "頁碼|空白"
+    IDS_PRINT_PAGENUM       "頁 %i"
+    IDS_PRINT_EMPTY         "這個即將列印的文檔沒有包含任何文字。"
+    IDS_PRINT_ERROR         "列印錯誤 ""%s""！"
+    IDS_FAV_SUCCESS         "當前檔案的捷徑已經建立到我的最愛資料夾。"
+    IDS_FAV_FAILURE         "當前檔案的捷徑無法建立。\n請確保我的最愛資料夾裡沒有重名的檔案。"
+    IDS_READONLY_MODIFY     "檔案內容 ""%s"" 不能修改。"
+    IDS_READONLY_SAVE       """%s"" 是隻讀內容。儲存為不同的檔案？"
+    IDS_ENCODING            "編碼(&E):"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FILTER_SUPPORT      "支援的檔案"
+    IDS_BYTES               "位元組\nKB\nMB\nGB\nTB\n\n"
+    IDS_COMMENT             "註釋程式碼塊(&M)"
+    IDS_UNCOMMENT           "解除程式碼塊註釋(&N)"
+    IDS_ERR_EMPTRY          "不能留空。"
+    IDS_ERROR               "錯誤"
+    IDS_LEXDEFAULT          "文字文檔\n預設樣式\n頁邊空白和行號\n比對的括號\n比對的錯誤括號\n控制符 (未使用的)\n縮排精靈 (僅色彩)\n選擇的文字 (僅色彩)\n空白處 (僅色彩)\n當前行背景 (僅色彩)\n^ 符號前景 (僅色彩)\nC^ 符號寬度 (大小從 1 到 3)\n排版線 (僅色彩)\n書籤圖示 (1 到 9)\n書籤行背景 (僅色彩)"
+    IDS_LEXMSDOS            "MS-DOS\n預設樣式"
+    IDS_LEXHTML             "HTML 文檔\n預設樣式\nHTML 標籤\nHTML 未知標籤\nHTML 內容\nHTML 未知內容\nHTML 值\n雙引號引用的 HTML 字串\n單引號引用的 HTML 字串\nHTML 其他內建標籤\nHTML 註釋\nHTML 實體\nXML 關閉標籤\nXML 識別碼開始\nXML 識別碼結束\nASP 開始標籤\nASP 開始標籤 @\nCDATA\nPHP 開始標籤\nPHP 預設\nPHP 字串\nPHP 簡單字串\nPHP 關鍵字\nPHP 數字\nPHP 變數\nPHP 字串變數\nPHP 複變數\nPHP 註釋\nPHP 註釋行\nPHP 運算元\nJS 預設\nJS 註釋\nJS 註釋行\nJS 註釋文檔\nJS 數字\nJS 識別碼\nJS 關鍵字\nJS 雙字串\nJS 單字串\nJS 字串結束行\nJS 符號\nJS Regex\nASP JS 預設\nASP JS 註釋\nASP JS 註釋行\nASP JS 註釋文檔\nASP JS 數字\nASP JS 識別碼\nASP JS 關鍵字\nASP JS 雙字串\nASP JS 單字串\nASP JS 字串結束行\nASP JS 符號\nASP JS Regex\nVBS 預設\nVBS 註釋行\nVBS 數字\nVBS 關鍵字\nVBS 字串\nVBS 字串結束行\nVBS 識別碼\nASP VBS 預設\nASP VBS 註釋行\nASP VBS 數字\nASP VBS 關鍵字\nASP VBS 字串\nASP VBS 字串結束行\nASP VBS 識別碼"
+    IDS_LEXXML              "XML 文檔\n預設樣式\nXML 標籤\nXML 關閉標籤\nXML 內容\nXML 值\nXML 雙引字串\nXML 單引字串\nXML 其它內建標籤\nXML 註釋\nXML 實體\nXML 識別碼開始\nXML 識別碼結束\nCDATA"
+    IDS_LEXCSS              "CSS 樣式表\n預設樣式\n標籤\n類\n偽類\n未知的偽類\n運算元\n識別碼\n未知的識別碼\n值\n註釋\nId\n重要的\n指示的\n雙引號引用的字串\n單引號引用的字串"
+    IDS_LEXCPP              "C/C++ 原始碼\n預設樣式\n註釋\n註釋行\n註釋文檔\n註釋行文檔\n關鍵字\n識別碼\n數字\n字串\n未關閉的字串\n字元\n運算元\n預處理器\n註釋文檔關鍵字\n註釋文檔關鍵字錯誤"
+    IDS_LEXCS               "C# 原始碼\n預設樣式\n註釋\n註釋行\n註釋文檔\n註釋行文檔\n關鍵字\n識別碼\n數字\n字串\nVerbatim字串\n未關閉的字串\n字元\n運算元\n預處理器\n註釋文檔關鍵字\n註釋文檔關鍵字錯誤"
+    IDS_LEXRC               "資源指令檔\n預設樣式\n註釋\n註釋行\n註釋文檔\n關鍵字\n識別碼\n數字\n字串\n未關閉的字串\n字元\n運算元\n預處理器"
+    IDS_LEXMAK              "Makefile\n預設樣式\n註釋\n預處理器\n識別碼\n運算元\n目的\nID EOL"
+    IDS_LEXVBS              "VB 指令檔\n預設樣式\n註釋\n數字\n關鍵字\n字串\n未關閉的字串\n運算元\n識別碼\n常量\n預處理器\n彙編"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_LEXVB               "Visual Basic\n預設樣式\n註釋\n數字\n關鍵字\n字串\n未關閉的字串\n運算元\n識別碼\n常量\n預處理器\n彙編"
+    IDS_LEXJS               "Java 指令檔\n預設樣式\n註釋\n註釋行\n註釋文檔\n註釋行文檔\n關鍵字\n識別碼\n數字\n字串\n未關閉的字串\n字元\n運算元\n預處理器"
+    IDS_LEXJAVA             "Java 原始碼\n預設樣式\n註釋\n註釋行\n註釋文檔\n註釋行文檔\n關鍵字\n識別碼\n數字\n字串\n未關閉的字串\n字元\n運算元\n預處理器"
+    IDS_LEXPAS              "Pascal 原始碼\n預設樣式\n註釋\n註釋行\n註釋文檔\n關鍵字\n識別碼\n數字\n字串\n運算元\n預處理器\nInline Asm"
+    IDS_LEXASM              "彙編程式\n預設樣式\n註釋\n數字\n雙引號引用的字串\n單引號引用的字串\n未關閉的字串\n運算元\n識別碼\nCPU 指令\nFPU 指令\n寄存器\n指令\n指令操作數\n延伸指令"
+    IDS_LEXPL               "Perl/CGI 指令檔\n預設樣式\n錯誤\n註釋\n數字\n關鍵字\n雙引號引用的字串\n單引號引用的字串\n運算元\n識別碼\n行開始的 POD\n標量 $\n陣列 @\nHash %\n符號表 *\nRegex /re/ or m{re}\nSubstitution s/re/or e/\nBack Ticks\n資料區\nHere-doc (Delimiter)\nHere-doc (Single quoted, q)\nHere-doc (Double quoted, qq)\nHere-doc (Back ticks, qx)\nSingle quoted string, generic (q)\n雙引字串 (qq)\nBack ticks (qx)\nRegex (qr)\n陣列 (qw)"
+    IDS_LEXINI              "設定檔\n預設樣式\n註釋\n區段\n工作\n預設值"
+    IDS_LEXBAT              "批次檔\n預設樣式\n註釋\n關鍵字\n標記\n隱藏\n指令\n識別碼\n運算元"
+    IDS_LEXDIFF             "Diff 檔案\n預設樣式\n註釋\n指令\n源和目的檔案\n位置設定\n新增的行\n移除的行"
+    IDS_LEXSQL              "SQL 查詢\n預設樣式\n註釋\n行註釋\n文檔註釋\n數字\n關鍵字\n雙引號引用的字串\n單引號引用的字串\n運算元\n識別碼"
+    IDS_LEXAS               "ActionScript 2.0\n預設樣式\n註釋\n註釋行\n註釋文檔\n註釋行文檔\n關鍵字\n識別碼\n數字\n字串\n未關閉的字串\n字元\n運算元\n預處理器"
+    IDS_LEXNSIS             "NSIS 指令檔\n預設樣式\n單行註釋\n註釋區塊\n雙引號引用的字串\n左引號(`)引用的字串\n右引號(')引用的字串\n指令\n變數\n字串裡的變數\n數字\n標記\n使用者定義的\n區段\n函式\n子區段\n區段組\n頁面延伸指令\n條件定義\n宏定義"
+    IDS_LEXPY               "Python 指令檔\n預設樣式\n註釋\n註釋區塊\n關鍵字\n識別碼\n數字\n運算元\n雙引號引用的字串\n單引號引用的字串\n未關閉的字串\n雙引字串\n單引字串\n類名\n函式名"
+    IDS_LEXRUBY             "Ruby 指令檔\n預設樣式\n註釋行\nPOD\n數字\n字串\n運算元"
+    IDS_LEXREG              "登錄檔案\n預設樣式\n註釋\n區段\n工作\n預設值"
+    IDS_CHARCOUNT           "字數統計:\t\n單位元組: %u\n雙位元組: %u\n換行字元: %u\n換行符: %u\n其它: %u\n總共: %u"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ASSOC_TYPE          "直接關聯\n新增到快顯功能表"
+    IDS_OPENBY              "用 %s 開啟"
+    IDS_UNKNOWN_FILE        "%s 檔案"
+    IDS_LEXH                "C/C++ 頭檔案\n預設樣式\n註釋\n註釋行\n註釋文檔\n註釋行文檔\n關鍵字\n識別碼\n數字\n字串\n未關閉的字串\n字元\n運算元\n預處理器\n註釋文檔關鍵字\n註釋文檔關鍵字錯誤"
+    IDS_LEXSUB              "字幕檔案\n預設樣式"
+    IDS_ERR_ALREADY_EXISTS  "'%s' 已經存在，請輸入另外一個名稱。"
+    IDS_ERR_NOTFOUND        "'%s' 找不到。"
+    IDS_EOLMODE             "EOL 模式(&M):"
+    IDS_BADFILECHAR         "不能包含 '|:*?""<>' 字元"
+    IDS_MODIFIED            "檔案 '%s'\n 已被其它程式修改，需要重新載入嗎？"
+    IDS_ERR_REGEX           "無效的規則運算式！\n錯誤: %s"
+    IDS_ABOUT               "關於"
+    IDS_SETTING             "設定"
+    IDS_OK                  "確定"
+    IDS_CANCEL              "取消"
+    IDS_COLLECT             "收集了 %u 項。"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_NAME                "名稱"
+    IDS_EXPRESSION          "運算式"
+    IDS_LEXFORTRAN          "Fortran\n預設樣式\n註釋\n數字\n字串 1\n字串 2\n行尾字串\n運算元\n識別碼\n字\n字 2\n字 3\n預處理器\n運算元 2\n標記\nContinuation"
+    IDS_ERR_EMPTY_FILE      "檔案不能為空！"
+    IDS_PROFILE             "Notepad2 設定檔 (xml)\n*.xml\n\n"
+    IDS_ERR_XML_PARSE       "XML 解析錯誤"
+END
+
+#endif    // Chinese (Taiwan) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

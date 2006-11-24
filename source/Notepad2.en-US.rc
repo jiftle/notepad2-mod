@@ -1,0 +1,1065 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINWND MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                IDM_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            IDM_FILE_OPEN
+        MENUITEM "Re&vert\tF5",                 IDM_FILE_REVERT
+        MENUITEM "&Save\tCtrl+S",               IDM_FILE_SAVE
+        MENUITEM "Save &As...\tF6",             IDM_FILE_SAVEAS
+        MENUITEM "Save &Copy...\tCtrl+F6",      IDM_FILE_SAVECOPY
+        MENUITEM "&Read Only",                  IDM_FILE_READONLY
+        MENUITEM SEPARATOR
+        POPUP "&Launch"
+        BEGIN
+            MENUITEM "&New Window\tAlt+N",          IDM_FILE_NEWWINDOW
+            MENUITEM "&Empty Window\tAlt+0",        IDM_FILE_NEWWINDOW2
+            MENUITEM SEPARATOR
+            MENUITEM "Execute &Document\tCtrl+L",   IDM_FILE_LAUNCH
+            MENUITEM "&Open with...\tAlt+L",        IDM_FILE_OPENWITH
+            MENUITEM "&Command...\tCtrl+R",         IDM_FILE_RUN
+        END
+        POPUP "Open &With"
+        BEGIN
+            MENUITEM "&Config...",                  IDM_OPENWITH_CONFIG
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Code&page",                   IDM_CODEPAGE
+        POPUP "&Encoding"
+        BEGIN
+            MENUITEM "&ANSI",                       IDM_ENCODING_ANSI
+            MENUITEM "&Unicode",                    IDM_ENCODING_UNICODE_LE
+            MENUITEM "Unicode &Big Endian",         IDM_ENCODING_UNICODE_BE
+            MENUITEM "UTF-&8",                      IDM_ENCODING_UTF8
+        END
+        POPUP "Reloa&d"
+        BEGIN
+            MENUITEM "Au&to",                       IDM_RELOAD_AUTO
+            MENUITEM SEPARATOR
+            MENUITEM "As &ANSI",                    IDM_RELOAD_ANSI
+            MENUITEM "As &Unicode",                 IDM_RELOAD_UNICODE_LE
+            MENUITEM "As Unicode &Big endian",      IDM_RELOAD_UNICODE_BE
+            MENUITEM "As UTF-&8",                   IDM_RELOAD_UTF8
+        END
+        POPUP "Line Endin&gs"
+        BEGIN
+            MENUITEM "&Windows (CR+LF)",            IDM_LINEENDINGS_CRLF
+            MENUITEM "&Unix (LF)",                  IDM_LINEENDINGS_LF
+            MENUITEM "&Mac (CR)",                   IDM_LINEENDINGS_CR
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Propert&ies...",              IDM_FILE_PROPERTIES
+        MENUITEM "Create &Desktop Link",        IDM_FILE_CREATELINK
+        MENUITEM SEPARATOR
+        POPUP "&Favorites"
+        BEGIN
+            MENUITEM "&Open Favorites...\tAlt+I",   IDM_FILE_OPENFAV
+            MENUITEM "&Add Current File...\tAlt+K", IDM_FILE_ADDTOFAV
+            MENUITEM "&Manage...\tF9",              IDM_FILE_MANAGEFAV
+        END
+        MENUITEM "Recent (&History)...",        IDM_RECENT_FILE
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit\tAlt+F4",               IDM_FILE_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               IDM_EDIT_UNDO
+        MENUITEM "&Redo\tCtrl+Y",               IDM_EDIT_REDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                IDM_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               IDM_EDIT_COPY
+        MENUITEM "Copy &All\tAlt+C",            IDM_EDIT_COPYALL
+        MENUITEM "&Paste\tCtrl+V",              IDM_EDIT_PASTE
+        MENUITEM "Clear\tDel",                  IDM_EDIT_CLEAR
+        MENUITEM "Clear A&ll",                  IDM_EDIT_CLEARALL
+        MENUITEM SEPARATOR
+        MENUITEM "&Select All\tCtrl+A",         IDM_EDIT_SELECTALL
+        MENUITEM "Select &Word\tAlt+Space",     IDM_EDIT_SELECTWORD
+        MENUITEM SEPARATOR
+        POPUP "L&ine"
+        BEGIN
+            MENUITEM "Move &Up\tCtrl+Shift+Up",     IDM_EDIT_MOVELINEUP
+            MENUITEM "&Move Down\tCtrl+Shift+Down", IDM_EDIT_MOVELINEDOWN
+            MENUITEM "&Transpose\tCtrl+T",          IDM_EDIT_TOGGLELINE
+            MENUITEM "&Duplicate",                  IDM_EDIT_DUPLICATELINE
+            MENUITEM "&Cut\tCtrl+Shift+X",          IDM_EDIT_CUTLINE
+            MENUITEM "C&opy\tCtrl+Shift+C",         IDM_EDIT_COPYLINE
+            MENUITEM "D&elete",                     IDM_EDIT_DELETELINE
+            MENUITEM "Delete &Left\tCtrl+Shift+Backspace", IDM_EDIT_DELETELINELEFT
+            MENUITEM "Delete &Right\tCtrl+Shift+Del", IDM_EDIT_DELETELINERIGHT
+        END
+        POPUP "&Block"
+        BEGIN
+            MENUITEM "&Indent\tTab",                IDM_EDIT_INDENT
+            MENUITEM "&Unindent\tShift+Tab",        IDM_EDIT_UNINDENT
+            MENUITEM SEPARATOR
+            MENUITEM "Strip &First Character\tAlt+Z", IDM_EDIT_STRIP1STCHAR
+            MENUITEM "Strip &Trailing Blanks\tAlt+W", IDM_EDIT_TRIMLINES
+            MENUITEM "&Remove Blank Lines\tAlt+R",  IDM_EDIT_REMOVEBLANKLINES
+            MENUITEM SEPARATOR
+            MENUITEM "&Split Lines\tCtrl+I",        IDM_EDIT_SPLITLINES
+            MENUITEM "&Join Lines\tCtrl+Shift+I",   IDM_EDIT_JOINLINES
+        END
+        POPUP "Brace"
+        BEGIN
+            MENUITEM "&Find Matching Brace\tCtrl+B", IDM_EDIT_FINDMATCHINGBRACE
+            MENUITEM "&Select To Matching Brace\tCtrl+Shift+B", IDM_EDIT_SELTOMATCHINGBRACE
+        END
+        POPUP "C&onvert"
+        BEGIN
+            MENUITEM "&Uppercase\tCtrl+Shift+U",    IDM_EDIT_CONVERTUPPERCASE
+            MENUITEM "&Lowercase\tCtrl+U",          IDM_EDIT_CONVERTLOWERCASE
+            MENUITEM SEPARATOR
+            MENUITEM "&Tabify Selection\tCtrl+Shift+T", IDM_EDIT_CONVERTSPACES
+            MENUITEM "U&ntabify Selection\tCtrl+Shift+S", IDM_EDIT_CONVERTTABS
+            MENUITEM SEPARATOR
+            MENUITEM "To &ANSI Text\tCtrl+Shift+A", IDM_EDIT_CONVERTANSI
+            MENUITEM "To &OEM Text\tCtrl+Shift+O",  IDM_EDIT_CONVERTOEM
+        END
+        POPUP "I&nstert"
+        BEGIN
+            MENUITEM "Time/Date (&Short Form)\tCtrl+F5", IDM_EDIT_INSERT_SHORTDATE
+            MENUITEM "Time/Date (&Long Form)\tCtrl+Shift+F5", IDM_EDIT_INSERT_LONGDATE
+            MENUITEM SEPARATOR
+            MENUITEM "&Filename\tCtrl+F9",          IDM_EDIT_INSERT_FILENAME
+            MENUITEM "&Path and Filename\tCtrl+Shift+F9", IDM_EDIT_INSERT_PATHNAME
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "&Find...\tCtrl+F",            IDM_EDIT_FIND
+        MENUITEM "Find Ne&xt\tF3",              IDM_EDIT_FINDNEXT
+        MENUITEM "Find Pre&vious\tShift+F3",    IDM_EDIT_FINDPREV
+        MENUITEM "R&eplace...\tCtrl+H",         IDM_EDIT_REPLACE
+        MENUITEM "Collect",                     IDM_EDIT_COLLECT
+        MENUITEM "&Goto...\tCtrl+J",            IDM_EDIT_GOTOLINE
+        POPUP "Boolmark"
+        BEGIN
+            MENUITEM "Goto &Next Bookmark\tF2",     IDM_EDIT_BOOKMARK_NEXT
+            MENUITEM "Goto &Previous Bookmark\tShift+F2", IDM_EDIT_BOOKMARK_PREV
+            MENUITEM "&Toggle Bookmark\tCtrl+F2",   IDM_EDIT_BOOKMARK_TOGGLE
+            MENUITEM "&Clear All Bookmarks\tCtrl+Shift+F2", IDM_EDIT_BOOKMARK_CLEARALL
+        END
+        MENUITEM "Copy to &HTML",               IDM_COPYTO_HTML
+        MENUITEM "Copy to U&BB",                IDM_EXPORT_UBB
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "Word W&rap\tCtrl+W",          IDM_VIEW_WORDWRAP
+        MENUITEM "&Long Line Marker\tCtrl+Shift+L", IDM_VIEW_LONGLINEMARKER
+        MENUITEM SEPARATOR
+        MENUITEM "Indentation &Guides\tCtrl+Shift+G", IDM_VIEW_SHOWINDENTGUIDES
+        MENUITEM "&Auto Indent Text",           IDM_VIEW_AUTOINDENTTEXT
+        MENUITEM SEPARATOR
+        MENUITEM "Line &Numbers\tCtrl+Shift+N", IDM_VIEW_LINENUMBERS
+        MENUITEM "Selection &Margin\tCtrl+Shift+M", IDM_VIEW_MARGIN
+        MENUITEM SEPARATOR
+        MENUITEM "Show &Whitespace\tCtrl+Shift+8", IDM_VIEW_SHOWWHITESPACE
+        MENUITEM "Show Line &Endings\tCtrl+Shift+9", IDM_VIEW_SHOWEOLS
+        MENUITEM "Show Wrap S&ymbols\tCtrl+Shift+0", IDM_VIEW_WORDWRAPSYMBOLS
+        MENUITEM SEPARATOR
+        MENUITEM "Visual &Brace Matching\tCtrl+Shift+V", IDM_VIEW_MATCHBRACES
+        MENUITEM "Auto Close &HTML/XML\tCtrl+Shift+H", IDM_VIEW_AUTOCLOSETAGS
+        MENUITEM SEPARATOR
+        MENUITEM "Zoom &In\tCtrl++",            IDM_VIEW_ZOOMIN
+        MENUITEM "Zoom &Out\tCtrl+-",           IDM_VIEW_ZOOMOUT
+        MENUITEM "Reset &Zoom\tCtrl+/",         IDM_VIEW_RESETZOOM
+        MENUITEM SEPARATOR
+        MENUITEM "Show &Toolbar",               IDM_VIEW_TOOLBAR
+        MENUITEM "Show &Statusbar",             IDM_VIEW_STATUSBAR
+    END
+    POPUP "&Tools"
+    BEGIN
+        MENUITEM "&Syntax Scheme...\tF12",      IDM_VIEW_SCHEME
+        MENUITEM "C&haracter Count",            IDM_HELP_CHARCOUNT
+        MENUITEM SEPARATOR
+        POPUP "Batch (BAT/CMD)"
+        BEGIN
+            MENUITEM "&Comment",                    IDM_BAT_COMMENT
+            MENUITEM "&Uncomment",                  IDM_BAT_UNCOMMENT
+        END
+        POPUP "NSIS"
+        BEGIN
+            MENUITEM "Com&pile NSIS ...",           IDM_NSIS_COMPILE
+            MENUITEM SEPARATOR
+            MENUITEM "&Comment (;)",                IDM_NSIS_COMMENT
+            MENUITEM "Co&mment (#)",                IDM_NSIS_COMMENT2
+            MENUITEM "&Uncomment",                  IDM_NSIS_UNCOMMENT
+        END
+        POPUP "C/C++"
+        BEGIN
+            MENUITEM "&Quick Format\tAlt+F8",       IDM_CPP_QFORMAT
+            MENUITEM "Manual &Format...",           IDM_CPP_FORMAT
+            MENUITEM "Format Method",               IDM_FORMAT_SCHEME
+            MENUITEM "&Batch Format...",            IDM_CPP_BATCH_FORMAT
+            MENUITEM SEPARATOR
+            MENUITEM "&Comment",                    IDM_CPP_COMMENT
+            MENUITEM "&Uncomment",                  IDM_CPP_UNCOMMENT
+        END
+        POPUP "Python"
+        BEGIN
+            MENUITEM "&Comment",                    IDM_PY_COMMENT
+            MENUITEM "&Uncomment",                  IDM_PY_UNCOMMENT
+        END
+        POPUP "Ruby"
+        BEGIN
+            MENUITEM "&Comment",                    IDM_RB_COMMENT
+            MENUITEM "&Uncomment",                  IDM_RB_UNCOMMENT
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "&Customize Toolbar...",       IDM_VIEW_CUSTOMIZETB
+        MENUITEM "&Customize Schemes...",       IDM_VIEW_SCHEMECONFIG
+        MENUITEM "&File Association...",        IDM_SETTING_FILEASSOCIATION
+        MENUITEM SEPARATOR
+        MENUITEM "&Settings...",                IDM_TOOLS_SETTINGS
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About...\tF1",               IDM_HELP_ABOUT
+        MENUITEM "&Command Line Help",          IDM_HELP_CMD
+    END
+END
+
+IDR_POPUPMENU MENU 
+BEGIN
+    POPUP "+"
+    BEGIN
+        MENUITEM "&Undo",                       IDM_EDIT_UNDO
+        MENUITEM "&Redo",                       IDM_EDIT_REDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t",                        IDM_EDIT_CUT
+        MENUITEM "&Copy",                       IDM_EDIT_COPY
+        MENUITEM "Copy &All",                   IDM_EDIT_COPYALL
+        MENUITEM "&Paste",                      IDM_EDIT_PASTE
+        MENUITEM "Cl&ear",                      IDM_EDIT_CLEAR
+        MENUITEM SEPARATOR
+        MENUITEM "&Select All",                 IDM_EDIT_SELECTALL
+        MENUITEM "Select &Word",                IDM_EDIT_SELECTWORD
+        MENUITEM SEPARATOR
+        MENUITEM "Copy to &HTML",               IDM_COPYTO_HTML
+        MENUITEM "Copy to U&BB",                IDM_EXPORT_UBB
+    END
+    POPUP "+"
+    BEGIN
+        MENUITEM "Show &Toolbar",               IDM_VIEW_TOOLBAR
+        MENUITEM "&Customize Toolbar...",       IDM_VIEW_CUSTOMIZETB
+        MENUITEM "Show &Statusbar",             IDM_VIEW_STATUSBAR
+    END
+    POPUP "+"
+    BEGIN
+        MENUITEM "Open Notepad2",               IDM_TRAY_RESTORE
+        MENUITEM "Exit Notepad2",               IDM_TRAY_EXIT
+    END
+    POPUP "+"
+    BEGIN
+        MENUITEM "^\tBeginning of Line",        IDM_LINEFRONT
+        MENUITEM "$\tEnd of Line",              IDM_LINEEND
+        MENUITEM SEPARATOR
+        MENUITEM ".\tAny Single Character",     IDM_SINGLE_CHAR
+        MENUITEM "*\tZero or More",             IDM_ZERO_OR_MORE
+        MENUITEM "+\tOne or More",              IDM_ONE_OR_MORE
+        MENUITEM "?\tZero or one",              IDM_ZERO_OR_ONE
+        MENUITEM "{n,m}\tn through m",          IDM_NM
+        MENUITEM SEPARATOR
+        MENUITEM "*?\tNon Greedy Zero or More", IDM_NG_ZERO_OR_MORE
+        MENUITEM "+?\tNon Greeds One of More",  IDM_NG_ONE_OR_MORE
+        MENUITEM "??\tNon Greeds Zero or One",  IDM_NG_ZERO_OR_ONE
+        MENUITEM "{n,m}?\tNon Greedy n through m", IDM_NG_NM
+        MENUITEM SEPARATOR
+        MENUITEM "()\tGroup",                   IDM_GROUP
+        MENUITEM "|\tOr",                       IDM_OR
+        MENUITEM "[]\tAny One Character in the Set", IDM_CHAR_SET
+        MENUITEM "[^]\tAny one Character Not in the Set", IDM_NCHAR_SET
+        MENUITEM SEPARATOR
+        MENUITEM "\\n\tNewline",                IDM_NEWLINE
+        MENUITEM "\\r\tCarriage Return",        IDM_CR
+        MENUITEM "\\t\tTab",                    IDM_TAB
+        MENUITEM "\\w\tWord Character",                   IDM_WORD
+        MENUITEM "\\s\tSpace",                  IDM_SPACE
+        MENUITEM "\\d\tDigit",                  IDM_DIGIT
+        MENUITEM "\\l\tLowercase",              IDM_LOWER
+        MENUITEM "\\u\tUppercase",              IDM_UPPER
+        MENUITEM "\\\tEscape Special Character", IDM_ESC
+        MENUITEM SEPARATOR
+        MENUITEM "Custom...",                   IDM_CUSTOM
+    END
+    POPUP "+"
+    BEGIN
+        MENUITEM "\\n\tNewline",                IDM_NEWLINE
+        MENUITEM "\\r\tCarriage Return",        IDM_CR
+        MENUITEM "\\t\tTab",                    IDM_TAB
+        MENUITEM SEPARATOR
+        MENUITEM "\\0\tEntire Sub Expression",               IDM_MATCH_SUBEXP0
+        MENUITEM SEPARATOR
+        MENUITEM "\\1\tMatched Sub Expression 1",               IDM_MATCH_SUBEXP1
+        MENUITEM "\\2\tMatched Sub Expression 2",               IDM_MATCH_SUBEXP2
+        MENUITEM "\\3\tMatched Sub Expression 3",               IDM_MATCH_SUBEXP3
+        MENUITEM "\\4\tMatched Sub Expression 4",               IDM_MATCH_SUBEXP4
+        MENUITEM "\\5\tMatched Sub Expression 5",               IDM_MATCH_SUBEXP5
+        MENUITEM "\\6\tMatched Sub Expression 6",               IDM_MATCH_SUBEXP6
+        MENUITEM "\\7\tMatched Sub Expression 7",               IDM_MATCH_SUBEXP7
+        MENUITEM "\\8\tMatched Sub Expression 8",               IDM_MATCH_SUBEXP8
+        MENUITEM "\\9\tMatched Sub Expression 9",               IDM_MATCH_SUBEXP9
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ADDTOFAV DIALOGEX 0, 0, 172, 66
+STYLE DS_SETFONT | DS_3DLOOK | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Add to Favorites"
+FONT 8, "Tahoma", 400, 0, 0x0
+BEGIN
+    LTEXT           "Enter the name for the new favorites item:",IDC_STATIC,7,7,158,8
+    EDITTEXT        100,7,22,158,13,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,59,45,50,14,WS_DISABLED
+    PUSHBUTTON      "Cancel",IDCANCEL,115,45,50,14
+END
+
+IDD_COMPILE_NSIS DIALOGEX 0, 0, 294, 252
+STYLE DS_SETFONT | DS_3DLOOK | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Compile NSIS script"
+FONT 8, "Tahoma", 400, 0, 0x0
+BEGIN
+    PUSHBUTTON      "&Cancel",IDCANCEL,231,226,50,14
+    CONTROL         "",IDC_INFO,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_NOCOLUMNHEADER | WS_BORDER | WS_TABSTOP,9,21,272,191
+    PUSHBUTTON      "&Test",IDC_TEST,134,226,86,14,WS_DISABLED
+    SCROLLBAR       IDC_SIZEBOX,281,240,13,12,SBS_SIZEBOXBOTTOMRIGHTALIGN | SBS_SIZEBOX | SBS_SIZEGRIP
+END
+
+IDD_CPP_BATCH_FORMAT DIALOGEX 0, 0, 302, 224
+STYLE DS_SETFONT | DS_3DLOOK | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Batch format"
+FONT 8, "Tahoma", 400, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,171,200,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,240,200,50,14
+    LTEXT           "Select a format method:",IDC_STATIC,10,14,97,8
+    COMBOBOX        IDC_METHOD,10,27,147,157,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_PATH,10,174,241,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BROWSE,260,174,30,14
+    CONTROL         "",IDC_INFO,"SysListView32",LVS_REPORT | LVS_NOCOLUMNHEADER | WS_BORDER,10,56,280,70
+    LTEXT           "Select files:",IDC_STATIC1,10,163,200,8
+    SCROLLBAR       IDC_SIZEBOX,290,214,11,10,SBS_SIZEBOXBOTTOMRIGHTALIGN | SBS_SIZEBOX | SBS_SIZEGRIP
+    CONTROL         "",IDC_PROGRESS,"msctls_progress32",WS_BORDER,10,141,280,14
+END
+
+IDD_FAVORITES DIALOGEX 0, 0, 324, 298
+STYLE DS_SETFONT | DS_3DLOOK | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Favorites"
+FONT 8, "Tahoma", 400, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_INFO,"SysListView32",LVS_SMALLICON | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_SHAREIMAGELISTS | LVS_AUTOARRANGE | LVS_NOCOLUMNHEADER | WS_BORDER | WS_TABSTOP,8,34,306,206
+    PUSHBUTTON      "Setup favorites folder...",IDC_GOTOFAVDIR,8,276,89,13
+    DEFPUSHBUTTON   "Open",IDOK,264,253,50,14
+    PUSHBUTTON      "Close",IDCANCEL,264,275,50,14
+    SCROLLBAR       IDC_SIZEBOX,314,289,10,9,SBS_SIZEBOXBOTTOMRIGHTALIGN | SBS_SIZEBOX | SBS_SIZEGRIP
+    LTEXT           "Current folder:",IDC_STATIC,8,8,77,8
+    EDITTEXT        IDC_CURDIR,8,17,306,14,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "",IDC_UP,107,275,18,14
+    COMBOBOX        IDC_FILTER,8,253,204,100,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_FORMAT DIALOGEX 0, 0, 438, 317
+STYLE DS_SETFONT | DS_3DLOOK | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Format method"
+FONT 8, "Tahoma", 400, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,317,296,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,381,296,50,14
+    EDITTEXT        IDC_SPACE_NUM,231,123,25,12,ES_RIGHT | ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPACE_NUM_SPIN,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | UDS_NOTHOUSANDS,258,122,10,14
+    LTEXT           "Space number",IDC_STATIC,187,121,44,20
+    COMBOBOX        IDC_PREDEFINE,178,20,101,155,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Predefined:",IDC_STATIC,178,7,56,8
+    LTEXT           "Description:",IDC_STATIC,7,7,56,8
+    LTEXT           "",IDC_DESCRIPTION,7,20,157,163,SS_NOTIFY | WS_BORDER | WS_TABSTOP
+    GROUPBOX        "Language",IDC_STATIC,178,40,101,29
+    CONTROL         "C",IDC_C,"Button",BS_AUTORADIOBUTTON | WS_GROUP,187,52,34,10
+    CONTROL         "Java",IDC_JAVA,"Button",BS_AUTORADIOBUTTON,234,52,34,10
+    GROUPBOX        "Indent characters",IDC_STATIC,177,76,101,72
+    CONTROL         "Space",IDC_SPACE,"Button",BS_AUTORADIOBUTTON | WS_GROUP,187,90,53,10
+    CONTROL         "Tab",IDC_TAB,"Button",BS_AUTORADIOBUTTON,187,105,64,10
+    CONTROL         "Indent 'class'",IDC_INDENT_CLASS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,309,31,71,10
+    CONTROL         "Indent 'switch'",IDC_INDENT_SWITCH,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,309,46,79,10
+    CONTROL         "Indent 'case'",IDC_INDENT_CASE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,309,61,72,10
+    CONTROL         "Indent brackets",IDC_INDENT_BRACKET,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,309,76,81,10
+    CONTROL         "Iindent blocks",IDC_INDENT_BLOCK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,309,91,68,10
+    CONTROL         "Indent 'namespace'",IDC_INDENT_NAMESPACE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,309,106,86,10
+    CONTROL         "Indent label",IDC_INDENT_LABEL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,309,121,64,10
+    GROUPBOX        "Indent",IDC_STATIC,299,20,112,207
+    LTEXT           "Max instatement indent",IDC_STATIC,309,190,49,8
+    EDITTEXT        IDC_MAX_INDENT,362,188,25,12,ES_RIGHT | ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "",IDC_MAX_II_SPIN,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | UDS_NOTHOUSANDS,388,187,11,14
+    LTEXT           "Min conditional indent",IDC_STATIC,309,205,49,8
+    EDITTEXT        IDC_MIN_CI,362,202,25,12,ES_RIGHT | ES_AUTOHSCROLL
+    CONTROL         "",IDC_MIN_CI_SPIN,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | UDS_NOTHOUSANDS,388,201,11,14
+    CONTROL         "Indent preprocessor",IDC_INDENT_PREPROCESSOR,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,309,136,95,10
+    CONTROL         "Converts tabs",IDC_CONVERT_TAB,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,309,151,80,10
+    CONTROL         "Fill empty lines",IDC_FILL_EMPTY_LINE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,309,166,78,10
+    GROUPBOX        "Block styles",IDC_STATIC,177,157,101,79
+    CONTROL         "Standard",IDC_BLOCK_STD,"Button",BS_AUTORADIOBUTTON | WS_GROUP,187,171,60,10
+    CONTROL         "Attach brackets",IDC_BLOCK_ATTACH,"Button",BS_AUTORADIOBUTTON,187,186,76,10
+    CONTROL         "Linux",IDC_BLOCK_LINUX,"Button",BS_AUTORADIOBUTTON,187,201,36,10
+    CONTROL         "breaks closing headers",IDC_BLOCK_BCH,"Button",BS_AUTORADIOBUTTON,187,216,84,10
+    GROUPBOX        "Block padding",IDC_STATIC,177,246,101,44
+    CONTROL         "Block header",IDC_PAD_BLOCK_HEADER,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,187,260,67,10
+    CONTROL         "Break 'else if'",IDC_SEPER_ELSEIF,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,187,276,64,10
+    GROUPBOX        "Padding operator",IDC_STATIC,7,193,157,44
+    CONTROL         "Around operators",IDC_PAD_OPERATION,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,27,205,103,10
+    CONTROL         "Around parenthesies",IDC_PAD_PARENT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,27,221,99,10
+    GROUPBOX        "Others",IDC_STATIC,7,246,157,44
+    CONTROL         "Mix statement",IDC_MIX_STATEMENT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,27,258,72,10
+    CONTROL         "Mix block",IDC_MIX_BLOCK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,27,273,56,10
+    PUSHBUTTON      "Save as...",IDC_SAVEAS,299,265,101,14
+    PUSHBUTTON      "Set as default",IDC_SETDEFAULT,299,239,101,14
+END
+
+IDD_LINENUM DIALOGEX 0, 0, 186, 46
+STYLE DS_SETFONT | DS_3DLOOK | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Goto"
+FONT 8, "Tahoma", 400, 0, 0x0
+BEGIN
+    LTEXT           "&Line:",IDC_STATIC,7,7,16,8
+    EDITTEXT        IDC_LINENUM,7,24,46,14,ES_AUTOHSCROLL
+    LTEXT           "&Column:",IDC_STATIC,63,7,27,8
+    EDITTEXT        IDC_COLNUM,63,24,46,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,129,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,129,24,50,14
+END
+
+IDD_PAGESETUP DIALOGEX 5, 5, 356, 218
+STYLE DS_SETFONT | DS_3DLOOK | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Page Setup"
+FONT 8, "Tahoma", 400, 0, 0x0
+BEGIN
+    GROUPBOX        "Paper",1073,8,8,224,56,WS_GROUP
+    LTEXT           "Si&ze:",1089,16,24,36,8
+    COMBOBOX        1137,64,23,160,160,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    LTEXT           "&Source:",1090,16,45,36,8
+    COMBOBOX        1138,64,42,160,160,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    GROUPBOX        "Orientation",1072,8,69,64,56,WS_GROUP
+    CONTROL         "P&ortrait",1056,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,16,82,52,12
+    CONTROL         "L&andscape",1057,"Button",BS_AUTORADIOBUTTON,16,103,52,12
+    GROUPBOX        "Margins",1075,80,69,152,56,WS_GROUP
+    LTEXT           "&Left:",1102,88,85,32,8
+    EDITTEXT        1155,120,82,28,12,WS_GROUP
+    LTEXT           "&Top:",1104,88,104,32,8
+    EDITTEXT        1156,120,103,28,12,WS_GROUP
+    LTEXT           "&Right:",1103,164,85,32,8
+    EDITTEXT        1157,196,82,28,12,WS_GROUP
+    LTEXT           "&Bottom:",1105,164,104,32,8
+    EDITTEXT        1158,196,103,28,12,WS_GROUP
+    GROUPBOX        "Headers and Footers",1074,8,130,224,56,WS_GROUP
+    LTEXT           "&Header:",IDC_STATIC,16,146,36,8
+    COMBOBOX        32,64,145,160,160,CBS_DROPDOWNLIST | WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    LTEXT           "&Footer:",IDC_STATIC,16,167,36,8
+    COMBOBOX        33,64,164,160,160,CBS_DROPDOWNLIST | WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    GROUPBOX        "Zoom",IDC_STATIC,240,130,108,56,WS_GROUP
+    LTEXT           "Print &zoom (-10 to +20):",IDC_STATIC,248,146,92,8
+    EDITTEXT        30,298,164,42,12,ES_AUTOHSCROLL
+    CONTROL         "",31,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | UDS_HOTTRACK,282,163,11,14
+    DEFPUSHBUTTON   "OK",1,190,195,50,14,WS_GROUP
+    PUSHBUTTON      "Cancel",2,244,195,50,14
+    PUSHBUTTON      "&Printer...",1026,298,195,50,14
+    GROUPBOX        "Preview",IDC_STATIC,240,8,108,117
+    CONTROL         "",1080,"Static",SS_WHITERECT,254,26,80,80
+    CONTROL         "",1081,"Static",SS_GRAYRECT,334,30,4,80
+    CONTROL         "",1082,"Static",SS_GRAYRECT,262,102,80,4
+END
+
+IDD_REPLACE DIALOGEX 0, 0, 310, 150
+STYLE DS_SETFONT | DS_3DLOOK | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Find and Replace"
+FONT 8, "Tahoma", 400, 0, 0x0
+BEGIN
+    ICON            102,IDC_STATIC,7,7,20,20
+    LTEXT           "Find String:",IDC_STATIC,35,25,46,8
+    COMBOBOX        IDC_FINDTEXT,35,34,192,116,CBS_DROPDOWN | CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Replace with:",IDC_STATIC_REPLACETEXT,35,58,44,8
+    COMBOBOX        IDC_REPLACETEXT,35,68,192,116,CBS_DROPDOWN | CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Match &case",IDC_FINDCASE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,35,92,91,10
+    CONTROL         "Match &whole word",IDC_FINDWORD,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,35,105,84,10
+    CONTROL         "Match &beginning of word",IDC_FINDSTART,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,35,118,95,10
+    CONTROL         "Regular &expression",IDC_FINDREGEXP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,35,131,93,10
+    CONTROL         "Find &up",IDC_FINDUP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,160,92,74,10
+    CONTROL         "C&lose after done",IDC_FINDCLOSE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,160,105,77,10
+    DEFPUSHBUTTON   "&Find",IDOK,250,23,53,14
+    PUSHBUTTON      "&Replace",IDC_REPLACE,250,40,53,14
+    PUSHBUTTON      "Collec&t",IDC_COLLECT,250,40,53,14
+    PUSHBUTTON      "Replace &All",IDC_REPLACEALL,250,57,53,14
+    PUSHBUTTON      "In &Selection",IDC_REPLACEINSEL,250,75,53,14
+    PUSHBUTTON      "Close",IDCANCEL,250,92,53,14
+    CTEXT           "Find",IDC_DO_FIND,35,7,29,8,SS_NOTIFY
+    CTEXT           "Replace",IDC_DO_REPLACE,74,7,29,8,SS_NOTIFY
+    LTEXT           "|",IDC_STATIC,67,7,8,8
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,35,19,268,1
+    CTEXT           "Collect",IDC_DO_COLLECT,113,7,29,8,SS_NOTIFY
+    LTEXT           "|",IDC_STATIC,106,7,8,8
+    CONTROL         "",IDC_YPOS,"Static",SS_ETCHEDHORZ,35,92,268,1
+    PUSHBUTTON      ">",IDC_MENU_FIND,228,34,13,13
+    PUSHBUTTON      ">",IDC_MENU_REPLACE,228,68,13,13
+END
+
+IDD_RUN DIALOGEX 0, 0, 224, 85
+STYLE DS_SETFONT | DS_3DLOOK | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Run"
+FONT 8, "Tahoma", 400, 0, 0x0
+BEGIN
+    ICON            101,IDC_STATIC,7,7,20,20
+    LTEXT           "Enter the name of an executable program file,\na folder or a document to open.",IDC_STATIC,35,7,188,17
+    EDITTEXT        IDC_COMMANDLINE,35,35,165,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "",IDC_SEARCHEXE,204,35,13,13
+    DEFPUSHBUTTON   "OK",IDOK,112,64,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,167,64,50,14
+END
+
+IDD_SAVE_METHOD DIALOGEX 0, 0, 266, 243
+STYLE DS_SETFONT | DS_3DLOOK | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Saving method"
+FONT 8, "Tahoma", 400, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,141,217,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,202,217,50,14
+    LTEXT           "Name",IDC_STATIC,8,15,81,8
+    LTEXT           "Description",IDC_STATIC,8,53,92,8
+    EDITTEXT        IDC_NAME,8,27,244,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_INFO,8,66,244,137,ES_MULTILINE | ES_AUTOHSCROLL | ES_WANTRETURN
+    SCROLLBAR       IDC_SIZEBOX,252,231,13,11,SBS_SIZEBOXBOTTOMRIGHTALIGN | SBS_SIZEBOX | SBS_SIZEGRIP
+END
+
+IDD_STYLECONFIG DIALOGEX 0, 0, 411, 238
+STYLE DS_SETFONT | DS_3DLOOK | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Customize Schemes"
+FONT 8, "Tahoma", 400, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_STYLELIST,"SysTreeView32",TVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP | 0x400,7,7,164,224
+    EDITTEXT        IDC_STYLEEDIT,185,53,206,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "",IDC_PREVSTYLE,179,195,16,14
+    PUSHBUTTON      "",IDC_NEXTSTYLE,179,215,16,14
+    PUSHBUTTON      "&Font...",IDC_STYLEFONT,301,85,54,14
+    PUSHBUTTON      "For&eground...",IDC_STYLEFORE,301,138,54,14
+    PUSHBUTTON      "&Background...",IDC_STYLEBACK,301,162,54,14
+    DEFPUSHBUTTON   "OK",IDOK,291,217,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,351,217,50,14
+    ICON            103,IDC_STATIC,181,7,20,20
+    CTEXT           "",IDC_FCOLOR,264,138,23,15,SS_CENTERIMAGE,WS_EX_STATICEDGE
+    CTEXT           "",IDC_BCOLOR,264,162,23,15,SS_CENTERIMAGE,WS_EX_STATICEDGE
+    LTEXT           "Extensions",IDC_STATIC,185,42,148,8
+    EDITTEXT        IDC_FONT_SIZE,202,86,85,12,ES_AUTOHSCROLL | ES_READONLY | ES_NUMBER
+    CONTROL         "Bold",IDC_FONT_BOLD,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,202,109,32,10
+    CONTROL         "Italic",IDC_FONT_ITALIC,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,262,109,32,10
+    CONTROL         "Underline",IDC_FONT_UNDERLINE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,322,109,40,10
+    LTEXT           "",IDC_STATIC,212,182,190,28
+    EDITTEXT        IDC_FGCODE,202,138,40,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_BGCODE,202,162,40,14,ES_AUTOHSCROLL | ES_READONLY
+END
+
+IDD_STYLESELECT DIALOGEX 0, 0, 226, 256
+STYLE DS_SETFONT | DS_3DLOOK | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Select Scheme"
+FONT 8, "Tahoma", 400, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_STYLELIST,"SysListView32",LVS_SMALLICON | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_SHAREIMAGELISTS | LVS_AUTOARRANGE | WS_BORDER | WS_TABSTOP,10,10,204,202
+    DEFPUSHBUTTON   "OK",IDOK,105,231,50,14,WS_DISABLED
+    PUSHBUTTON      "Cancel",IDCANCEL,164,231,50,14
+    SCROLLBAR       IDC_SIZEBOX,214,245,12,11,SBS_SIZEBOXBOTTOMRIGHTALIGN | SBS_SIZEBOX | SBS_SIZEGRIP
+END
+
+IDD_FILEASSOC DIALOGEX 0, 0, 314, 274
+STYLE DS_SETFONT | DS_3DLOOK | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "File association"
+FONT 8, "Tahoma", 400, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,198,249,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,251,249,50,14
+    CONTROL         "",IDC_TREEVIEW,"SysTreeView32",TVS_HASBUTTONS | TVS_HASLINES | TVS_LINESATROOT | TVS_DISABLEDRAGDROP | WS_BORDER | WS_TABSTOP,11,12,290,213
+    PUSHBUTTON      "Select &all",IDC_SELALL,11,249,50,14
+    PUSHBUTTON      "&Unselect all",IDC_SELNONE,69,249,50,14
+    CONTROL         "Set as Internet Explorer source viewer",IDC_IE_VIEWER,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,11,232,164,10
+    SCROLLBAR       IDC_SIZEBOX,301,263,13,10,SBS_SIZEBOXBOTTOMRIGHTALIGN | SBS_SIZEBOX | SBS_SIZEGRIP
+END
+
+IDD_OPENWITH DIALOGEX 0, 0, 312, 270
+STYLE DS_SETFONT | DS_3DLOOK | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Config"
+FONT 8, "Tahoma", 400, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,187,246,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,249,246,50,14
+    LTEXT           "Name:",IDC_STATIC_NAME,8,200,43,8
+    EDITTEXT        IDC_NAME,59,198,120,14,ES_AUTOHSCROLL
+    LTEXT           "Execute:",IDC_STATIC_PATH,8,225,44,8
+    EDITTEXT        IDC_PATH,59,223,204,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BROWSE,273,223,26,14
+    CONTROL         "",IDC_INFO,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_NOCOLUMNHEADER | LVS_NOSORTHEADER | WS_BORDER | WS_TABSTOP,8,15,291,170,WS_EX_STATICEDGE
+    PUSHBUTTON      "Add",IDC_ADD,191,198,50,14
+    PUSHBUTTON      "Remove",IDC_REMOVE,249,198,50,14
+    SCROLLBAR       IDC_SIZEBOX,299,260,13,10,SBS_SIZEBOXBOTTOMRIGHTALIGN | SBS_SIZEBOX | SBS_SIZEGRIP
+END
+
+IDD_EXCEPTION DIALOGEX 0, 0, 316, 249
+STYLE DS_SETFONT | DS_3DLOOK | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Exception"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,132,228,50,14
+    EDITTEXT        IDC_INFO,7,7,302,216,ES_MULTILINE | ES_AUTOVSCROLL | ES_READONLY | ES_WANTRETURN | WS_VSCROLL
+END
+
+IDD_PROP_GENERAL DIALOGEX 0, 0, 223, 125
+STYLE DS_SETFONT | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "General"
+FONT 8, "Tahoma", 400, 0, 0x0
+BEGIN
+    CONTROL         "Reuse Window",IDC_REUSEWINDOW,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,8,0,116,10
+    CONTROL         "Always On Top",IDC_ALWAYSONTOP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,8,16,112,10
+    CONTROL         "Minimize To Tray",IDC_MINTOTRAY,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,8,32,112,10
+    CONTROL         "Transparent Mode",IDC_TRANSPARENT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,8,87,88,10
+    CONTROL         "Show Full Path In Title",IDC_SHOWFULLPATH,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,8,48,111,10
+    CONTROL         "Save Before Running Tools",IDC_SAVEVEFORERUNNINGTOOLS,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,8,64,114,10
+    GROUPBOX        "Esc Key Function",IDC_STATIC,127,0,89,67
+    CONTROL         "Minimize",IDC_ESCMINIMIZE,"Button",BS_AUTORADIOBUTTON,136,16,41,10
+    CONTROL         "Exit",IDC_ESCEXIT,"Button",BS_AUTORADIOBUTTON,136,32,27,10
+    CONTROL         "None",IDC_NOESNFUNC,"Button",BS_AUTORADIOBUTTON,136,48,33,10
+    CONTROL         "",IDC_SLIDER_ALPHA,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,8,101,118,15
+    LTEXT           "Static",IDC_ALPHA,104,88,19,8
+END
+
+IDD_PROP_EDITOR DIALOGEX 0, 0, 222, 125
+STYLE DS_SETFONT | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Editor"
+FONT 8, "Tahoma", 400, 0, 0x0
+BEGIN
+    GROUPBOX        "Word Wrap",IDC_STATIC,0,0,109,53
+    LTEXT           "Initial indent:",IDC_STATIC,8,15,42,8
+    EDITTEXT        IDC_INDENT,53,12,31,14,ES_AUTOHSCROLL | ES_NUMBER
+    COMBOBOX        IDC_SYMBOL,8,30,91,80,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Long Line",IDC_STATIC,0,57,109,62
+    LTEXT           "Limit:",IDC_STATIC,8,73,18,8
+    EDITTEXT        IDC_LONGLINES,53,69,31,14,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Show edge line",IDC_EDGE,"Button",BS_AUTORADIOBUTTON,8,88,64,10
+    CONTROL         "Change background color",IDC_BACKGROUND,"Button",BS_AUTORADIOBUTTON,8,102,98,10
+    GROUPBOX        "Tab",IDC_STATIC,117,0,105,53
+    LTEXT           "Tab Width:",IDC_STATIC,122,15,36,8
+    EDITTEXT        IDC_TABWIDTH,171,12,31,14,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Insert tabs as spaces.",IDC_TABASSPACE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,122,34,83,10
+END
+
+IDD_CUSTOM_REGXP DIALOGEX 0, 0, 364, 308
+STYLE DS_SETFONT | DS_3DLOOK | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Custom Regular Expression"
+FONT 8, "Tahoma", 400, 0, 0x0
+BEGIN
+    PUSHBUTTON      "Colse",IDCANCEL,304,285,50,14
+    CONTROL         "",IDC_LIST,"SysListView32",LVS_REPORT | LVS_SINGLESEL | WS_BORDER | WS_TABSTOP,7,7,347,174
+    SCROLLBAR       IDC_SIZEBOX,354,299,10,9,SBS_SIZEBOXBOTTOMRIGHTALIGN | SBS_SIZEBOX | SBS_SIZEGRIP
+    LTEXT           "Name:",IDC_STATIC_NAME,7,189,65,8
+    EDITTEXT        IDC_NAME,7,200,347,14,ES_AUTOHSCROLL
+    LTEXT           "Expression:",IDC_STATIC_VALUE,7,223,80,8
+    EDITTEXT        IDC_VALUE,7,234,347,34,ES_AUTOHSCROLL
+    PUSHBUTTON      "&Remove",IDC_REMOVE,125,285,50,14
+    PUSHBUTTON      "&Modify",IDC_MODIFY,65,285,50,14
+    PUSHBUTTON      "&Add",IDC_ADD,7,285,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ADDTOFAV, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 165
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 59
+    END
+
+    IDD_COMPILE_NSIS, DIALOG
+    BEGIN
+        LEFTMARGIN, 9
+        RIGHTMARGIN, 281
+        TOPMARGIN, 10
+        BOTTOMMARGIN, 240
+    END
+
+    IDD_CPP_BATCH_FORMAT, DIALOG
+    BEGIN
+        LEFTMARGIN, 10
+        RIGHTMARGIN, 290
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 214
+    END
+
+    IDD_FAVORITES, DIALOG
+    BEGIN
+        LEFTMARGIN, 8
+        RIGHTMARGIN, 314
+        TOPMARGIN, 8
+        BOTTOMMARGIN, 289
+    END
+
+    IDD_FORMAT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 431
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 310
+    END
+
+    IDD_LINENUM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 39
+    END
+
+    IDD_PAGESETUP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 349
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 211
+    END
+
+    IDD_REPLACE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 293
+        VERTGUIDE, 35
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 131
+    END
+
+    IDD_SAVE_METHOD, DIALOG
+    BEGIN
+        LEFTMARGIN, 8
+        RIGHTMARGIN, 252
+        TOPMARGIN, 8
+        BOTTOMMARGIN, 231
+    END
+
+    IDD_STYLECONFIG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 402
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 231
+    END
+
+    IDD_STYLESELECT, DIALOG
+    BEGIN
+        LEFTMARGIN, 10
+        RIGHTMARGIN, 214
+        TOPMARGIN, 10
+        BOTTOMMARGIN, 245
+    END
+
+    IDD_FILEASSOC, DIALOG
+    BEGIN
+        LEFTMARGIN, 11
+        RIGHTMARGIN, 301
+        TOPMARGIN, 12
+        BOTTOMMARGIN, 263
+    END
+
+    IDD_OPENWITH, DIALOG
+    BEGIN
+        LEFTMARGIN, 8
+        RIGHTMARGIN, 299
+        TOPMARGIN, 8
+        BOTTOMMARGIN, 260
+    END
+
+    IDD_EXCEPTION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 309
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 242
+    END
+
+    IDD_CUSTOM_REGXP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 354
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 299
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_APPTITLE            "Notepad2"
+    IDS_APPTITLE_PASTEBOARD "Notepad2 : Paste Board"
+    IDS_UNTITLED            "Untitled"
+    IDS_READONLY            "(Read Only)"
+    IDS_DOCPOS              "Ln %s : %s   Col %s   Sel %s"
+    IDS_VERSION             "English Version"
+    IDS_LOADFILE            "Loading ""%s""..."
+    IDS_SAVEFILE            "Saving ""%s""..."
+    IDS_PRINTFILE           "Printing page %i..."
+    IDS_LINKDESCRIPTION     "Edit with Notepad2"
+    IDS_ERR_FINDTOOLONG     "Find text length limit to 255 character."
+    IDS_ERR_COMPILE_NSIS    "NSIS compiler error."
+    IDS_FORMATTED           "Formatted: "
+    IDS_ERR_OPENFILE        "Error open file: "
+    IDS_CLOSE               "Close"
+    IDS_FORMATTING          "Formatting: "
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FILTER_ALL          "All files (*.*)\n*.*\n"
+    IDS_FILTER_EXE          "Executable files (*.exe;*.com;*.bat;*.lnk;*.pif)\n*.exe;*.com;*.bat;*.lnk;*.pif\n"
+    IDS_OPENWITH            "Select the directory with links to your favorite applications."
+    IDS_FAVORITES           "Select the directory with links to your favorite files."
+END
+
+STRINGTABLE 
+BEGIN
+    IDT_FILE_NEW            "New"
+    IDT_FILE_OPEN           "Open"
+    IDT_VIEW_ALWAYSONTOP    "Browse with metapath"
+    IDT_FILE_SAVE           "Save"
+END
+
+STRINGTABLE 
+BEGIN
+    IDT_EDIT_UNDO           "Undo"
+    IDT_EDIT_REDO           "Redo"
+    IDT_EDIT_CUT            "Cut"
+    IDT_EDIT_COPY           "Copy"
+    IDT_EDIT_PASTE          "Paste"
+    IDT_EDIT_FIND           "Find"
+    IDT_EDIT_REPLACE        "Replace"
+    IDT_VIEW_WORDWRAP       "Word Wrap"
+    IDT_VIEW_ZOOMIN         "Zoom In"
+    IDT_VIEW_ZOOMOUT        "Zoom Out"
+    IDT_VIEW_SCHEME         "Select Scheme"
+    IDT_VIEW_SCHEMECONFIG   "Config Schemes"
+    IDT_FILE_EXIT           "Exit"
+    IDT_FILE_SAVEAS         "Save As"
+    IDT_FILE_SAVECOPY       "Save Copy"
+    IDT_EDIT_CLEAR          "Clear"
+END
+
+STRINGTABLE 
+BEGIN
+    IDT_EDIT_COPYALL        "Copy All"
+    IDT_EDIT_FINDNEXT       "Find Next"
+    IDT_EDIT_FINDPREV       "Find Previous"
+    IDT_FILE_PRINT          "Print"
+    IDT_FILE_OPENFAV        "Favorites"
+    IDT_FILE_ADDTOFAV       "Add to Favorites"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ERR_LOADFILE        "Error loading ""%s""!\nMake sure the file is not locked by another application."
+    IDS_ERR_SAVEFILE        "Error saving ""%s""!\nProbably the file is write-protected or locked by another application."
+    IDS_ERR_MRUDLG          "No access to the selected file!\nWould you like to remove it from the list?"
+    IDS_ERR_CREATELINK      "Error creating the Desktop link."
+    IDS_ERR_PREVWINDISABLED "Existing Notepad2 window is busy or has an active dialog box.\nWould you like to open another Notepad2 window?"
+    IDS_SELRECT             "This operation can't be perfomed within a rectangular selection."
+    IDS_FIND_WRAPFW         "Reached the end of the document.\nRestarting search at the beginning."
+    IDS_FIND_WRAPRE         "Reached the beginning of the document.\nRestarting search at the end."
+    IDS_NOTFOUND            "The specified text was not found."
+    IDS_REPLCOUNT           "%i occurrences of the specified text have been replaced."
+    IDS_WARNLOADBIGFILE     "Are you sure you want to open this large file?"
+    IDS_WORDWRAPVISUALS     "No wrap symbols\nSymbols before wrap\nSymbols after wrap\nSymbols before and after wrap\nSymbols near border"
+    IDS_SAVESETTINGS        "The current program settings have been saved."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CMDLINEHELP         "Notepad2.exe [/g ln[,col]] [/n] [/c] [/p x,y,cx,cy[,max]] [/i] [/u] [/?] [file]\n\n/g:\tJump to specified position, a line of -1 means end of file.\n/n:\tAlways open a new window.\n/c:\tOpen a new window and paste the clipboard contents.\n/b:\tOpen a new paste board to collect clipboard entries.\n/p:\tSet window position and size.\n/i:\tStart as tray icon.\n/u:\tRemove the registry entries created by Notepad2.\n/?:\tDisplay a brief summary about command line parameters."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ERR_DROP            "Only one file can be dropped at the same time!"
+    IDS_ASK_SAVE            "Save changes to ""%s""?"
+    IDS_ASK_CREATE          """%s"" not found.\nWould you like to create this file?"
+    IDS_PRINT_HEADER        "Filename, Current Date and Time|Filename, Current Date|Filename|Leave blank"
+    IDS_PRINT_FOOTER        "Page Number|Leave blank"
+    IDS_PRINT_PAGENUM       "Page %i"
+    IDS_PRINT_EMPTY         "This document doesn't contain any text to be printed."
+    IDS_PRINT_ERROR         "Error printing ""%s""!"
+    IDS_FAV_SUCCESS         "A shortcut to the current file has been created in the favorites directory."
+    IDS_FAV_FAILURE         "The shortcut to the current file could not be created.\nMake sure there's no other file with the same name."
+    IDS_READONLY_MODIFY     "The attributes of ""%s"" could not be modified."
+    IDS_READONLY_SAVE       """%s"" is read only. Save to a different file?"
+    IDS_ENCODING            "&Encoding:"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FILTER_SUPPORT      "Supported files"
+    IDS_BYTES               "Bytes\nKB\nMB\nGB\nTB\n\n"
+    IDS_COMMENT             "&Comment"
+    IDS_UNCOMMENT           "Uncomme&nt"
+    IDS_ERR_EMPTRY          "Can not empty."
+    IDS_ERROR               "Error"
+    IDS_LEXDEFAULT          "Default Text\nDefault Style\nMargins and Line Numbers\nMatching Braces\nMatching Braces Error\nControl Characters (Unused)\nIndentation Guide (Color only)\nSelected Text (Colors only)\nWhitespace (Colors only)\nCurrent Line Background (Color only)\nCaret Foreground (Color only)\nCaret Width (Size from 1 to 3)\nLong Line Marker (Colors only)\nBookmark Icon (1 to 9)\nBookmark Line Background (Color only)"
+    IDS_LEXMSDOS            "MS-DOS text\nDefault Style"
+    IDS_LEXHTML             "Web Source Code\nDefault\nHTML Tag\nHTML Unknown Tag\nHTML Attribute\nHTML Unknown Attribute\nHTML Value\nHTML String double quoted\nHTML String single quoted\nHTML Other Inside Tag\nHTML Comment\nHTML Entity\nXML Closing Tag\nXML Identifier Start\nXML Identifier End\nASP Start Tag\nASP Start Tag @\nCDATA\nPHP Start Tag\nPHP Default\nPHP String\nPHP Simple String\nPHP Keyword\nPHP Number\nPHP Variable\nPHP String Variable\nPHP Complex Variable\nPHP Comment\nPHP Comment Line\nPHP Operator\nJS Default\nJS Comment\nJS Comment Line\nJS Comment Doc\nJS Number\nJS Identifier\nJS Keyword\nJS Double String\nJS Single String\nJS String EOL\nJS Symbols\nJS Regex\nASP JS Default\nASP JS Comment\nASP JS Commentline\nASP JS Comment Doc\nASP JS Number\nASP JS Identifier\nASP JS Keyword\nASP JS Double String\nASP JS Single String\nASP JS String EOL\nASP JS Symbols\nASP JS Regex\nVBS Default\nVBS Comment Line\nVBS Number\nVBS Keyword\nVBS String\nVBS String EOL\nVBS Identifier\nASP VBS Default\nASP VBS Comment Line \nASP VBS Number\nASP VBS Keyword\nASP VBS String\nASP VBS String EOL\nASP VBS Identifier"
+    IDS_LEXXML              "XML Document\nDefault\nXML Tag\nXML Closing Tag\nXML Attribute\nXML Value\nXML String double quoted\nXML String single quoted\nXML Other Inside Tag\nXML Comment\nXML Entity\nXML Identifier Start\nXML Identifier End\nCDATA"
+    IDS_LEXCSS              "CSS Style Sheets\nDefault\nTag\nClass\nPseudoclass\nUnknown Pseudoclass\nOperator\nIdentifier\nUnknown Identifier\nValue\nComment\nId\nImportant\nDirective\nString double quoted\nString single quoted"
+    IDS_LEXCPP              "C/C++ Source Code\nDefault\nComment\nComment Line\nComment Doc\nComment Line Doc\nKeyword\nIdentifier\nNumber\nString\nString not closed\nCharacter\nOperator\nPreprocessor\nComment Doc Keyword\nComment Doc Keyword Error"
+    IDS_LEXCS               "C# Source Code\nDefault\nComment\nComment Line\nComment Doc\nComment Line Doc\nKeyword\nIdentifier\nNumber\nString\nVerbatim String\nString not closed\nCharacter\nOperator\nPreprocessor\nComment Doc Keyword\nComment Doc Keyword Error"
+    IDS_LEXRC               "Resource Script\nDefault\nComment\nComment Line\nComment Doc\nKeyword\nIdentifier\nNumber\nString\nString not closed\nCharacter\nOperator\nPreprocessor"
+    IDS_LEXMAK              "Makefile\nDefault\nComment\nPreprocessor\nIdentifier\nOperator\nTarget\nID EOL"
+    IDS_LEXVBS              "VBScript\nDefault\nComment\nNumber\nKeyword\nString\nString not closed\nOperator\nIdentifier\nConstant\nPreprocessor\nAssembler"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_LEXVB               "Visual Basic\nDefault\nComment\nNumber\nKeyword\nString\nString not closed\nOperator\nIdentifier\nConstant\nPreprocessor\nAssembler"
+    IDS_LEXJS               "JavaScript\nDefault\nComment\nComment Line\nComment Doc\nComment Line Doc\nKeyword\nIdentifier\nNumber\nString\nString not closed\nCharacter\nOperator\nPreprocessor"
+    IDS_LEXJAVA             "Java Source Code\nDefault\nComment\nComment Line\nComment Doc\nComment Line Doc\nKeyword\nIdentifier\nNumber\nString\nString not closed\nCharacter\nOperator\nPreprocessor"
+    IDS_LEXPAS              "Pascal Source Code\nDefault\nComment\nComment Line\nComment Doc\nKeyword\nIdentifier\nNumber\nString\nOperator\nPreprocessor\nInline Asm"
+    IDS_LEXASM              "Assembler\nDefault\nComment\nNumber\nString double quoted\nString single quoted\nString not closed\nOperator\nIdentifier\nCPU Instruction\nFPU Instruction\nRegister\nDirective\nDirective Operand\nExtended Instruction"
+    IDS_LEXPL               "Perl/CGI Script\nDefault\nError\nComment\nNumber\nKeyword\nString double quoted\nString single quoted\nOperator\nIdentifier\nPOD at beginning of line\nScalar $\nArray @\nHash %\nSymbol Table *\nRegex /re/ or m{re}\nSubstitution s/re/or e/\nBack Ticks\nData Section\nHere-doc (Delimiter)\nHere-doc (Single quoted, q)\nHere-doc (Double quoted, qq)\nHere-doc (Back ticks, qx)\nSingle quoted string, generic (q)\nDouble quoted string (qq)\nBack ticks (qx)\nRegex (qr)\nArray (qw)"
+    IDS_LEXINI              "Configuration Files\nDefault\nComment\nSection\nAssignment\nDefault Value"
+    IDS_LEXBAT              "Batch Files\nDefault\nComment\nKeyword\nLabel\nHide\nCommand\nIdentifier\nOperator"
+    IDS_LEXDIFF             "Diff Files\nDefault\nComment\nCommand\nSource and Destination Files\nPosition Setting\nLine Addition\nLine Removal"
+    IDS_LEXSQL              "SQL Query\nDefault\nComment\nLine Comment\nDoc Comment\nNumber\nKeyword\nString double quoted\nString single quoted\nOperator\nIdentifier"
+    IDS_LEXAS               "ActionScript 2.0\nDefault\nComment\nComment Line\nComment Doc\nComment Line Doc\nKeyword\nIdentifier\nNumber\nString\nString not closed\nCharacter\nOperator\nPreprocessor"
+    IDS_LEXNSIS             "NSIS Script\nDefault\nSingle line comment\nBlock comment\nString double quoted\nString left quoted\nString right quoted\nFunction\nVariable\nVariable within String\nNumber\nConstant\nUser Defined\nSection\nFunction\nSub Section\nSection Group\nPageEx\nIf Definition\nMacro Definition"
+    IDS_LEXPY               "Python Script\nDefault\nComment\nComment Block\nKeyword\nIdentifier\nNumber\nOperator\nString double quoted\nString single quoted\nString not closed\nString triple double quotes\nString triple single quotes\nClass name\nFunction name"
+    IDS_LEXRUBY             "Ruby Script\nDefault\nComment line\nPOD\nNumber\nString\nOperator"
+    IDS_LEXREG              "Registry File\nDefault\nComment\nSection\nAssignment\nDefault Value"
+    IDS_CHARCOUNT           "Character count:\t\nSignal bytes: %u\nMutli bytes: %u\nCarriage returns: %u\nLine feeds: %u\nOthers: %u\nTotal: %u"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ASSOC_TYPE          "Directly association\nAdd to context menu"
+    IDS_OPENBY              "Open by %s"
+    IDS_UNKNOWN_FILE        "%s file"
+    IDS_LEXH                "C/C++ Header File\nDefault\nComment\nComment Line\nComment Doc\nComment Line Doc\nKeyword\nIdentifier\nNumber\nString\nString not closed\nCharacter\nOperator\nPreprocessor\nComment Doc Keyword\nComment Doc Keyword Error"
+    IDS_LEXSUB              "Subtitles\nDefault"
+    IDS_ERR_ALREADY_EXISTS  "'%s' already exists, please enter another name."
+    IDS_ERR_NOTFOUND        "'%s' not found."
+    IDS_EOLMODE             "EOL &Mode"
+    IDS_BADFILECHAR         "Cannot contain any of '|:*?""<>'"
+    IDS_MODIFIED            "The file '%s'\n is modified by another program. Reload this file?"
+    IDS_ERR_REGEX           "That's not a valid regular expression!\nError: %s"
+    IDS_ABOUT               "About"
+    IDS_SETTING             "Settings"
+    IDS_OK                  "OK"
+    IDS_CANCEL              "Cancel"
+    IDS_COLLECT             "%u Collected."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_NAME                "Name"
+    IDS_EXPRESSION          "Expression"
+    IDS_LEXFORTRAN          "Fortran\nDefault\nComment\nNumber\nString 1\nString 2\nString EOL\nOperator\nIdentifier\nWord\nWord 2\nWord 3\nPreprocessor\nOperator 2\nLabel\nContinuation"
+    IDS_ERR_EMPTY_FILE      "File can not be empty!"
+    IDS_PROFILE             "Notepad2 profile (xml)\n*.xml\n\n"
+    IDS_ERR_XML_PARSE       "XML parse error"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

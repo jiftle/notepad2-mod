@@ -1,0 +1,307 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// BINARY
+//
+
+IDR_LINEDRAW            BINARY                  "resource\\BINARY\\LINEDRAW.TTF"
+IDR_NOTEPAD2HTML        BINARY                  "resource\\BINARY\\Notepad2HTML.exe"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINWND             ICON                    "resource\\icon\\Notepad2.ico"
+IDI_RUN                 ICON                    "resource\\icon\\Run.ico"
+IDI_FIND                ICON                    "resource\\icon\\Find.ico"
+IDI_STYLES              ICON                    "resource\\icon\\Styles.ico"
+IDI_ASP                 ICON                    "resource\\icon\\asp.ico"
+IDI_C                   ICON                    "resource\\icon\\c.ico"
+IDI_CS                  ICON                    "resource\\icon\\c#.ico"
+IDI_CFG                 ICON                    "resource\\icon\\cfg.ico"
+IDI_CPP                 ICON                    "resource\\icon\\cpp.ico"
+IDI_H                   ICON                    "resource\\icon\\h.ico"
+IDI_INI                 ICON                    "resource\\icon\\ini.ico"
+IDI_JS                  ICON                    "resource\\icon\\js.ico"
+IDI_NSIS                ICON                    "resource\\icon\\nsis.ico"
+IDI_RC                  ICON                    "resource\\icon\\rc.ico"
+IDI_SQL                 ICON                    "resource\\icon\\sql.ico"
+IDI_TXT                 ICON                    "resource\\icon\\txt.ico"
+IDI_VB                  ICON                    "resource\\icon\\vb.ico"
+IDI_CUE                 ICON                    "resource\\icon\\cue.ico"
+IDI_MAK                 ICON                    "resource\\ICON\\mak.ico"
+IDI_PY                  ICON                    "resource\\ICON\\py.ico"
+IDI_CSS                 ICON                    "resource\\ICON\\css.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINWND             BITMAP                  "resource\\BITMAP\\Toolbar.bmp"
+IDB_OPEN                BITMAP                  "resource\\BITMAP\\Open.bmp"
+IDB_NEXT                BITMAP                  "resource\\BITMAP\\Down.bmp"
+IDB_PREV                BITMAP                  "resource\\BITMAP\\Up.bmp"
+IDB_DISABLEDTOOLS       BITMAP                  "resource\\BITMAP\\Toolbar2.bmp"
+IDB_CHECK               BITMAP                  "resource\\BITMAP\\Check.bmp"
+IDB_RIGHT               BITMAP                  "resource\\BITMAP\\Right.BMP"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_HOVER               CURSOR                  "resource\\CURSOR\\Hover.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,1,1,0
+ PRODUCTVERSION 0,0,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x29L
+#else
+ FILEFLAGS 0x28L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "FileDescription", "Notepad2"
+            VALUE "FileVersion", "1, 1, 1, 0"
+            VALUE "InternalName", "Notepad2"
+            VALUE "LegalCopyright", "(c) Florian Balmer 2004"
+            VALUE "More Information", "More info: www.flos-freeware.ch"
+            VALUE "OriginalFilename", "Notepad2.exe"
+            VALUE "ProductVersion", "0, 0, 0, 0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINWND ACCELERATORS 
+BEGIN
+    VK_RETURN,      CMD_CTRLENTER,          VIRTKEY, CONTROL, NOINVERT
+    VK_F11,         CMD_LEXDEFAULT,         VIRTKEY, NOINVERT
+    VK_F11,         CMD_LEXHTML,            VIRTKEY, CONTROL, NOINVERT
+    VK_F11,         CMD_LEXXML,             VIRTKEY, SHIFT, NOINVERT
+    VK_F8,          IDM_CPP_QFORMAT,        VIRTKEY, ALT, NOINVERT
+    VK_F2,          IDM_EDIT_BOOKMARK_CLEARALL, VIRTKEY, SHIFT, CONTROL, NOINVERT
+    VK_F2,          IDM_EDIT_BOOKMARK_NEXT, VIRTKEY, NOINVERT
+    VK_F2,          IDM_EDIT_BOOKMARK_PREV, VIRTKEY, SHIFT, NOINVERT
+    VK_F2,          IDM_EDIT_BOOKMARK_TOGGLE, VIRTKEY, CONTROL, NOINVERT
+    "A",            IDM_EDIT_CONVERTANSI,   VIRTKEY, SHIFT, CONTROL, NOINVERT
+    "U",            IDM_EDIT_CONVERTLOWERCASE, VIRTKEY, CONTROL, NOINVERT
+    "O",            IDM_EDIT_CONVERTOEM,    VIRTKEY, SHIFT, CONTROL, NOINVERT
+    "T",            IDM_EDIT_CONVERTSPACES, VIRTKEY, SHIFT, CONTROL, NOINVERT
+    "S",            IDM_EDIT_CONVERTTABS,   VIRTKEY, SHIFT, CONTROL, NOINVERT
+    "U",            IDM_EDIT_CONVERTUPPERCASE, VIRTKEY, SHIFT, CONTROL, NOINVERT
+    "C",            IDM_EDIT_COPYALL,       VIRTKEY, ALT, NOINVERT
+    "C",            IDM_EDIT_COPYLINE,      VIRTKEY, SHIFT, CONTROL, NOINVERT
+    VK_DELETE,      IDM_EDIT_CUT,           VIRTKEY, SHIFT, NOINVERT
+    "X",            IDM_EDIT_CUTLINE,       VIRTKEY, SHIFT, CONTROL, NOINVERT
+    VK_BACK,        IDM_EDIT_DELETELINELEFT, VIRTKEY, SHIFT, CONTROL, NOINVERT
+    VK_DELETE,      IDM_EDIT_DELETELINERIGHT, VIRTKEY, SHIFT, CONTROL, NOINVERT
+    "F",            IDM_EDIT_FIND,          VIRTKEY, CONTROL, NOINVERT
+    "B",            IDM_EDIT_FINDMATCHINGBRACE, VIRTKEY, CONTROL, NOINVERT
+    VK_F3,          IDM_EDIT_FINDNEXT,      VIRTKEY, NOINVERT
+    VK_F3,          IDM_EDIT_FINDPREV,      VIRTKEY, SHIFT, NOINVERT
+    "G",            IDM_EDIT_GOTOLINE,      VIRTKEY, CONTROL, NOINVERT
+    "J",            IDM_EDIT_GOTOLINE,      VIRTKEY, CONTROL, NOINVERT
+    VK_F9,          IDM_EDIT_INSERT_FILENAME, VIRTKEY, CONTROL, NOINVERT
+    VK_F5,          IDM_EDIT_INSERT_LONGDATE, VIRTKEY, SHIFT, CONTROL, NOINVERT
+    VK_F9,          IDM_EDIT_INSERT_PATHNAME, VIRTKEY, SHIFT, CONTROL, NOINVERT
+    VK_F5,          IDM_EDIT_INSERT_SHORTDATE, VIRTKEY, CONTROL, NOINVERT
+    "I",            IDM_EDIT_JOINLINES,     VIRTKEY, SHIFT, CONTROL, NOINVERT
+    VK_DOWN,        IDM_EDIT_MOVELINEDOWN,  VIRTKEY, SHIFT, CONTROL, NOINVERT
+    VK_UP,          IDM_EDIT_MOVELINEUP,    VIRTKEY, SHIFT, CONTROL, NOINVERT
+    "R",            IDM_EDIT_REMOVEBLANKLINES, VIRTKEY, ALT, NOINVERT
+    "H",            IDM_EDIT_REPLACE,       VIRTKEY, CONTROL, NOINVERT
+    "A",            IDM_EDIT_SELECTALL,     VIRTKEY, CONTROL, NOINVERT
+    VK_SPACE,       IDM_EDIT_SELECTWORD,    VIRTKEY, ALT, NOINVERT
+    "B",            IDM_EDIT_SELTOMATCHINGBRACE, VIRTKEY, SHIFT, CONTROL, NOINVERT
+    "I",            IDM_EDIT_SPLITLINES,    VIRTKEY, CONTROL, NOINVERT
+    "Z",            IDM_EDIT_STRIP1STCHAR,  VIRTKEY, ALT, NOINVERT
+    "T",            IDM_EDIT_TOGGLELINE,    VIRTKEY, CONTROL, NOINVERT
+    "W",            IDM_EDIT_TRIMLINES,     VIRTKEY, ALT, NOINVERT
+    "K",            IDM_FILE_ADDTOFAV,      VIRTKEY, ALT, NOINVERT
+    "Q",            IDM_FILE_EXIT,          VIRTKEY, CONTROL, NOINVERT
+    "L",            IDM_FILE_LAUNCH,        VIRTKEY, CONTROL, NOINVERT
+    VK_F9,          IDM_FILE_MANAGEFAV,     VIRTKEY, NOINVERT
+    "N",            IDM_FILE_NEW,           VIRTKEY, CONTROL, NOINVERT
+    VK_F4,          IDM_FILE_NEW,           VIRTKEY, CONTROL, NOINVERT
+    "N",            IDM_FILE_NEWWINDOW,     VIRTKEY, ALT, NOINVERT
+    "0",            IDM_FILE_NEWWINDOW2,    VIRTKEY, ALT, NOINVERT
+    "O",            IDM_FILE_OPEN,          VIRTKEY, CONTROL, NOINVERT
+    "I",            IDM_FILE_OPENFAV,       VIRTKEY, ALT, NOINVERT
+    "L",            IDM_FILE_OPENWITH,      VIRTKEY, ALT, NOINVERT
+    "P",            IDM_FILE_PRINT,         VIRTKEY, CONTROL, NOINVERT
+    VK_F5,          IDM_FILE_REVERT,        VIRTKEY, NOINVERT
+    "R",            IDM_FILE_RUN,           VIRTKEY, CONTROL, NOINVERT
+    "S",            IDM_FILE_SAVE,          VIRTKEY, CONTROL, NOINVERT
+    VK_F6,          IDM_FILE_SAVEAS,        VIRTKEY, NOINVERT
+    VK_F6,          IDM_FILE_SAVECOPY,      VIRTKEY, CONTROL, NOINVERT
+    VK_F1,          IDM_HELP_ABOUT,         VIRTKEY, NOINVERT
+    "H",            IDM_VIEW_AUTOCLOSETAGS, VIRTKEY, SHIFT, CONTROL, NOINVERT
+    "N",            IDM_VIEW_LINENUMBERS,   VIRTKEY, SHIFT, CONTROL, NOINVERT
+    "L",            IDM_VIEW_LONGLINEMARKER, VIRTKEY, SHIFT, CONTROL, NOINVERT
+    "M",            IDM_VIEW_MARGIN,        VIRTKEY, SHIFT, CONTROL, NOINVERT
+    "V",            IDM_VIEW_MATCHBRACES,   VIRTKEY, SHIFT, CONTROL, NOINVERT
+    VK_DIVIDE,      IDM_VIEW_RESETZOOM,     VIRTKEY, CONTROL, NOINVERT
+    VK_F12,         IDM_VIEW_SCHEME,        VIRTKEY, NOINVERT
+    "9",            IDM_VIEW_SHOWEOLS,      VIRTKEY, SHIFT, CONTROL, NOINVERT
+    "G",            IDM_VIEW_SHOWINDENTGUIDES, VIRTKEY, SHIFT, CONTROL, NOINVERT
+    "8",            IDM_VIEW_SHOWWHITESPACE, VIRTKEY, SHIFT, CONTROL, NOINVERT
+    "U",            IDM_VIEW_TRANSPARENT,   VIRTKEY, ALT, NOINVERT
+    "W",            IDM_VIEW_WORDWRAP,      VIRTKEY, CONTROL, NOINVERT
+    "0",            IDM_VIEW_WORDWRAPSYMBOLS, VIRTKEY, SHIFT, CONTROL, NOINVERT
+    VK_ADD,         IDM_VIEW_ZOOMIN,        VIRTKEY, CONTROL, NOINVERT
+    VK_SUBTRACT,    IDM_VIEW_ZOOMOUT,       VIRTKEY, CONTROL, NOINVERT
+    VK_ESCAPE,      CMD_ESCAPE,             VIRTKEY, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// XPM
+//
+
+IDX_BM0                 XPM                     "resource\\XPM\\Bmicon0.xpm"
+IDX_BM1                 XPM                     "resource\\XPM\\Bmicon1.xpm"
+IDX_BM2                 XPM                     "resource\\XPM\\Bmicon2.xpm"
+IDX_BM3                 XPM                     "resource\\XPM\\Bmicon3.xpm"
+IDX_BM4                 XPM                     "resource\\XPM\\Bmicon4.xpm"
+IDX_BM5                 XPM                     "resource\\XPM\\Bmicon5.xpm"
+IDX_BM6                 XPM                     "resource\\XPM\\Bmicon6.xpm"
+IDX_BM7                 XPM                     "resource\\XPM\\Bmicon7.xpm"
+IDX_BM8                 XPM                     "resource\\XPM\\Bmicon8.xpm"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUT DIALOGEX 0, 0, 240, 190
+STYLE DS_SETFONT | DS_3DLOOK | WS_POPUP | WS_CAPTION
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "About"
+FONT 8, "Tahoma", 400, 0, 0x0
+BEGIN
+    ICON            IDR_MAINWND,IDC_STATIC,7,6,21,20
+    LTEXT           "",IDC_VERSION,35,13,205,8
+    LTEXT           "Copyright (C) Florian Balmer 2004",IDC_STATIC,35,29,173,8
+    LTEXT           "http://www.flos-freeware.ch",IDC_WEBPAGE,35,37,121,8
+    DEFPUSHBUTTON   "OK",IDOK,100,169,50,14
+    LTEXT           "Copyright (C) bluenet 2005-2006",IDC_STATIC,35,52,139,8
+    LTEXT           "http://sourceforge.net/projects/notepad2/",IDC_WEBPAGE2,35,60,147,8
+    LTEXT           "Artistic Style: Copyright (C) Tal Davidson",IDC_STATIC,35,100,177,8
+    LTEXT           "Regex: Copyright (C) John Maddock",IDC_STATIC,35,123,177,8
+    LTEXT           "http://sourceforge.net/projects/astyle/",IDC_WEBPAGE3,35,108,134,8
+    LTEXT           "http://www.boost.org/",IDC_WEBPAGE4,35,131,85,8
+    LTEXT           "Scintilla: Copyright (C) Neil Hodgson",IDC_STATIC,35,76,116,8
+    LTEXT           "http://www.scintilla.org/",IDC_WEBPAGE5,35,84,88,8
+    LTEXT           "Some Icons: Copyright (C) FOOOD",IDC_STATIC,35,146,177,8
+    LTEXT           "http://www.iconaholic.com/",IDC_WEBPAGE6,35,154,85,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        VERTGUIDE, 35
+        VERTGUIDE, 212
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 183
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

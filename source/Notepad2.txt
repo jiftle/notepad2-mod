@@ -1,0 +1,6 @@
+To Compile
+
+  - Install Boost: http://www.boost.org
+  - Include boost install dir to VC Include (For VC6: Tools -> Options -> Projects and solutions -> VC++ Directores -> Include files)
+
+

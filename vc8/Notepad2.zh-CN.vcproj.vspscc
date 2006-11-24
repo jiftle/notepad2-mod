@@ -1,0 +1,16 @@
+﻿""
+{
+"FILE_VERSION" = "9237"
+"ENLISTMENT_CHOICE" = "NEVER"
+"PROJECT_FILE_RELATIVE_PATH" = "relative:vc8"
+"NUMBER_OF_EXCLUDED_FILES" = "6"
+"EXCLUDED_FILE0" = "..\\source\\Dialogs.h"
+"EXCLUDED_FILE1" = "..\\source\\Styles.h"
+"EXCLUDED_FILE2" = "..\\source\\Notepad2.h"
+"EXCLUDED_FILE3" = "..\\source\\resource.h"
+"EXCLUDED_FILE4" = "..\\source\\Edit.h"
+"EXCLUDED_FILE5" = "..\\source\\MarkupSTL.h"
+"ORIGINAL_PROJECT_FILE_PATH" = ""
+"NUMBER_OF_NESTED_PROJECTS" = "0"
+"SOURCE_CONTROL_SETTINGS_PROVIDER" = "PROJECT"
+}

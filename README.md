@@ -4,7 +4,7 @@ Notepad2 mod
 
 Screenshot
 ---
-- ![Shot](https://github.com/jiftle/notepad2-mod/tree/master/doc/screenshots/1.jpeg)
+- ![Shot](notepad2-mod/doc/screenshots/1.png)
 
 A small, fast and free text editor with syntax highlighting for HTML and other common languages.*
 
